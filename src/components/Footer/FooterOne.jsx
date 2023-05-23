@@ -29,13 +29,18 @@ const FooterOne = () => {
                   </Link>
                   <div className="footer-content">
                     <p>
-                      A new way to make the payments easy, reliable and 100%
-                      secure. claritatem itamconse quat. Exerci tationulla
+                      <span className="footer-titulo">Fábrica de Software</span><br/>
+                      Construindo a tecnologia de amanhã, hoje!
                     </p>
                     <ul className="footer-social">
                       <li>
                         <a href="#">
-                          <i className="fab fa-youtube"></i>
+                          <i className="fab fa-linkedin"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i className="fab fa-instagram"></i>
                         </a>
                       </li>
                       <li>
@@ -47,12 +52,7 @@ const FooterOne = () => {
                         <a href="#">
                           <i className="fab fa-facebook-f"></i>
                         </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fab fa-linkedin"></i>
-                        </a>
-                      </li>
+                      </li>                      
                     </ul>
                   </div>
                 </div>
@@ -66,19 +66,19 @@ const FooterOne = () => {
                   <div className="footer-link">
                     <ul>
                       <li>
-                        <Link to="/">Contato</Link>
+                        <Link to="/#contact">Contato</Link>
                       </li>
                       <li>
-                        <Link to="/">Sobre nós</Link>
+                        <Link to="/#about">Sobre nós</Link>
                       </li>
                       <li>
-                        <Link to="/">Porque nos escolher</Link>
+                        <Link to="/#about">Porque nos escolher</Link>
                       </li>
                       <li>
-                        <Link to="/">Nosso Roadmap</Link>
+                        <Link to="/#roadmap">Nosso Roadmap</Link>
                       </li>
                       <li>
-                        <Link to="/">Terms & Services</Link>
+                        <Link to="/">Termos</Link>
                       </li>
                     </ul>
                   </div>
@@ -141,20 +141,17 @@ const FooterOne = () => {
             <div className="row align-items-center">
               <div className="col-lg-6">
                 <div className="copyright-text">
-                  <p>Copyright &copy; 2022. All Rights Reserved Bigtech</p>
+                  <p>Copyright &copy; 2023. All Rights Reserved Incript</p>
                 </div>
               </div>
               <div className="col-lg-6 d-none d-sm-block">
                 <div className="footer-menu">
                   <ul>
                     <li>
-                      <Link to="#">Terms and conditions</Link>
+                      <Link to="#">Termos e condições</Link>
                     </li>
                     <li>
-                      <Link to="#">Privacy policy</Link>
-                    </li>
-                    <li>
-                      <Link to="#">Login / Signup</Link>
+                      <Link to="#">Política de privacidade</Link>
                     </li>
                   </ul>
                 </div>

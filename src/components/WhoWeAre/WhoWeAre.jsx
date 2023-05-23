@@ -9,7 +9,7 @@ const WhoWeAre = (props) => {
         <div className="row align-items-center">
           <div className="col-lg-6">
             <div className="about-img wow fadeInLeft" data-wow-delay=".2s">
-              <img src={img01} alt="" />
+              <img src={img01} />
             </div>
           </div>
           <div className="col-lg-6">

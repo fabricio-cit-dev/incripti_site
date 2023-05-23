@@ -1062,6 +1062,10 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+  .banner-bg{
+    width: 100px !important;
+    height: 300px !important;
+  }
   .container,
   .custom-container {
     max-width: 540px;

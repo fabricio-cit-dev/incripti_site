@@ -2,43 +2,28 @@ import React from "react";
 import Countdown from "react-countdown";
 
 const CountDownOne = () => {
-  // Renderer callback with condition
+  // Renderer callback with condition <i class="fa-solid fa-users"></i> <i class="fa-solid fa-code"></i> <i class="fa-solid fa-mug-saucer"></i> <i class="fa-solid fa-circle-check"></i>
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
-    if (completed) {
       return (
         <>
           <div className="time-count day">
-            <span>{"00"}</span>Days
+            
+            <span>{"22+"}</span>Clientes Satisfeitos
           </div>
           <div className="time-count hour">
-            <span>{"00"}</span>hour
+            
+            <span>{"27k+"}</span>Linhas de código
           </div>
           <div className="time-count min">
-            <span>{"00"}</span>minute
+            
+            <span>{"154K+"}</span>Chícaras de café
           </div>
           <div className="time-count sec">
-            <span>{"00"}</span>second
+            
+            <span>{"45+"}</span>Projetos entregues
           </div>
         </>
       );
-    } else {
-      return (
-        <>
-          <div className="time-count day">
-            <span>{days < 10 ? "0" + days : days}</span>Days
-          </div>
-          <div className="time-count hour">
-            <span>{hours < 10 ? "0" + hours : hours}</span>hour
-          </div>
-          <div className="time-count min">
-            <span>{minutes < 10 ? "0" + minutes : minutes}</span>minute
-          </div>
-          <div className="time-count sec">
-            <span>{seconds < 10 ? "0" + seconds : seconds}</span>second
-          </div>
-        </>
-      );
-    }
   };
 
   return (

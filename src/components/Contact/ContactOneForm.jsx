@@ -7,7 +7,7 @@ const ContactOneForm = () => {
         <div className="row">
           <div className="col-md-6">
             <div className="form-grp">
-              <input type="text" placeholder="Nome Completo" required />
+              <input type="text" id="form-placeholder" placeholder="Nome Completo" required />
             </div>
           </div>
           <div className="col-md-6">

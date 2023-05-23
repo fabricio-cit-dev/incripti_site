@@ -13,16 +13,13 @@ const FooterTwo = () => {
                 <div className="footer-menu-two">
                   <ul className="navigation">
                     <li>
-                      <Link to="/">About us</Link>
+                      <Link to="/">Sobre nós</Link>
                     </li>
                     <li>
                       <Link to="/">Roadmap</Link>
                     </li>
                     <li>
-                      <Link to="/">Blog</Link>
-                    </li>
-                    <li>
-                      <Link to="/">Career</Link>
+                      <Link to="/#contact">Contatos</Link>
                     </li>
                   </ul>
                 </div>
@@ -32,6 +29,16 @@ const FooterTwo = () => {
                   <ul>
                     <li>
                       <a href="#">
+                        <i className="fab fa-linkedin"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i className="fab fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
                         <i className="fab fa-facebook-square"></i>
                       </a>
                     </li>
@@ -39,17 +46,7 @@ const FooterTwo = () => {
                       <a href="#">
                         <i className="fab fa-twitter"></i>
                       </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fab fa-vimeo-v"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i className="fab fa-youtube"></i>
-                      </a>
-                    </li>
+                    </li>             
                   </ul>
                 </div>
               </div>

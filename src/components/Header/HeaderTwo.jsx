@@ -111,16 +111,16 @@ const HeaderTwo = () => {
                           className="section-link"
                           onClick={() => handleClickScroll("header")}
                         >
-                          Home
+                          Principal
                         </Link>
                         <ul className={cn("sub-menu")}>
                           <li className={cn(pathname == "/" && "active")}>
-                            <NavLink to="/">Home One</NavLink>
+                            <NavLink to="/">Início</NavLink>
                           </li>
                           <li
                             className={cn(pathname == "/home-two" && "active")}
                           >
-                            <NavLink to="/home-two">Home Two</NavLink>
+                            <NavLink to="/home-two">Página 2</NavLink>
                           </li>
                         </ul>
                       </li>                                                               
