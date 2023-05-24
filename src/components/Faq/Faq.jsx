@@ -1,7 +1,6 @@
 import React from "react";
 import shape01 from "../../assets/img/images/faq_shape01.png";
 import shape02 from "../../assets/img/images/faq_shape02.png";
-import shape03 from "../../assets/img/images/faq_shape03.png";
 import FaqItem from "./FaqItem";
 
 const Faq = () => {
@@ -12,14 +11,11 @@ const Faq = () => {
       expanded: true,
       btnClass: "",
       contentClass: "show",
-      title: "Do I need to install any software?",
-      details: `LessAccounting is 100% web-based, meaning it can be
-      accessed from anywhere and there’s no software to
-      install on your computer. You can easily use
-      LessAccounting on your iPhone or any Android mobile
-      device with our cloud accounting. That is what makes it
-      the best small business accounting software options
-      among accounting programs.`,
+      title: "O que sua empresa faz?",
+      details: `Nossa empresa é especializada no desenvolvimento de 
+      softwares personalizados para atender às necessidades 
+      específicas de nossos clientes. Criamos soluções de software sob medida, 
+      desde aplicativos móveis até sistemas empresariais complexos.`,
     },
     {
       id: "headingTwo",
@@ -27,14 +23,11 @@ const Faq = () => {
       expanded: false,
       btnClass: "collapsed",
       contentClass: "",
-      title: "Is my data safe?",
-      details: `LessAccounting is 100% web-based, meaning it can be
-      accessed from anywhere and there’s no software to
-      install on your computer. You can easily use
-      LessAccounting on your iPhone or any Android mobile
-      device with our cloud accounting. That is what makes it
-      the best small business accounting software options
-      among accounting programs.`,
+      title: "Como funciona o processo de desenvolvimento de software em sua empresa?",
+      details: `Nosso processo de desenvolvimento de software segue uma abordagem colaborativa. 
+      Começamos com uma fase de descoberta, onde entendemos as necessidades e requisitos do cliente. 
+      Em seguida, passamos para o design, desenvolvimento, testes e implementação. 
+      Ao longo do processo, mantemos uma comunicação próxima com o cliente para garantir que suas expectativas sejam atendidas.`,
     },
     {
       id: "headingThree",
@@ -42,14 +35,12 @@ const Faq = () => {
       expanded: false,
       btnClass: "collapsed",
       contentClass: "",
-      title: "How does the 30-day free software trial work?",
-      details: `LessAccounting is 100% web-based, meaning it can be
-      accessed from anywhere and there’s no software to
-      install on your computer. You can easily use
-      LessAccounting on your iPhone or any Android mobile
-      device with our cloud accounting. That is what makes it
-      the best small business accounting software options
-      among accounting programs.`,
+      title: "Quais são as tecnologias com as quais sua empresa trabalha?",
+      details: `Trabalhamos com uma ampla gama de tecnologias, 
+      incluindo linguagens de programação como Java, C#, Python, 
+      JavaScript, frameworks como React, Angular, Vue.js, 
+      bancos de dados como MySQL, PostgreSQL, MongoDB e 
+      plataformas de nuvem como AWS, Azure e Google Cloud.`,
     },
     {
       id: "headingFour",
@@ -57,14 +48,12 @@ const Faq = () => {
       expanded: false,
       btnClass: "collapsed",
       contentClass: "",
-      title: "How does the 30-day free software trial work?",
-      details: `LessAccounting is 100% web-based, meaning it can be
-      accessed from anywhere and there’s no software to
-      install on your computer. You can easily use
-      LessAccounting on your iPhone or any Android mobile
-      device with our cloud accounting. That is what makes it
-      the best small business accounting software options
-      among accounting programs.`,
+      title: "Como garantem a segurança dos softwares desenvolvidos?",
+      details: `A segurança é uma prioridade para nós. 
+      Seguimos as melhores práticas de segurança no desenvolvimento de software, 
+      implementando medidas como criptografia de dados, autenticação e autorização adequadas, 
+      proteção contra ataques de segurança conhecidos e 
+      realizando testes rigorosos de segurança durante todo o processo de desenvolvimento.`,
     },
     {
       id: "headingFive",
@@ -72,14 +61,11 @@ const Faq = () => {
       expanded: false,
       btnClass: "collapsed",
       contentClass: "",
-      title: "How does the 30-day free software trial work?",
-      details: `LessAccounting is 100% web-based, meaning it can be
-      accessed from anywhere and there’s no software to
-      install on your computer. You can easily use
-      LessAccounting on your iPhone or any Android mobile
-      device with our cloud accounting. That is what makes it
-      the best small business accounting software options
-      among accounting programs.`,
+      title: "Quanto tempo leva para desenvolver um software personalizado?",
+      details: `O tempo de desenvolvimento varia dependendo da complexidade e escopo do projeto. 
+      Projetos menores podem levar algumas semanas, enquanto projetos mais complexos podem levar vários meses. 
+      Durante a fase de descoberta, trabalhamos em estreita colaboração com o cliente para estabelecer 
+      um cronograma realista e transparente.`,
     },
   ];
 
@@ -89,13 +75,12 @@ const Faq = () => {
         <div className="faq-shape-wrap">
           <img src={shape01} alt="" className="img-one" />
           <img src={shape02} alt="" className="img-two rotateme" />
-          <img src={shape03} alt="" className="img-three" />
         </div>
 
         <div className="row">
           <div className="col-lg-12">
             <div className="section-title section-title-two text-center mb-60">
-              <h2 className="title">Frequently asked questions</h2>
+              <h2 className="title">Perguntas Frequentes</h2>
             </div>
 
             <div className="faq-wrap wow fadeInUp" data-wow-delay=".2s">

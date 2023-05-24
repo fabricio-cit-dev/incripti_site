@@ -12,16 +12,16 @@ import img10 from "../../assets/img/partner/partner_img10.png";
 
 const TopPartners = () => {
   const partners_list = [
-    { src: img01, title: "" },
-    { src: img02, title: "" },
-    { src: img03, title: "" },
-    { src: img04, title: "" },
-    { src: img05, title: "" },
-    { src: img06, title: "" },
-    { src: img07, title: "" },
-    { src: img08, title: "" },
-    { src: img09, title: "" },
-    { src: img10, title: "" },
+    { src: img01, title: "empresa1" },
+    { src: img02, title: "empresa2" },
+    { src: img03, title: "empresa3" },
+    { src: img04, title: "empresa4" },
+    { src: img05, title: "empresa5" },
+    { src: img06, title: "empresa6" },
+    { src: img07, title: "empresa7" },
+    { src: img08, title: "empresa8" },
+    { src: img09, title: "empresa9" },
+    { src: img10, title: "empresa10" },
   ];
 
   return (
@@ -30,7 +30,7 @@ const TopPartners = () => {
         <div className="row justify-content-center">
           <div className="col-lg-8">
             <div className="section-title text-center mb-10">
-              <span className="sub-title">Our top partner</span>
+              <span className="sub-title">Nossos Parceiros</span>
             </div>
           </div>
         </div>

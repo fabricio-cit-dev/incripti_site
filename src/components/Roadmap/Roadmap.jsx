@@ -80,9 +80,9 @@ const Roadmap = () => {
         <div className="row justify-content-center">
           <div className="col-xl-5 col-lg-8">
             <div className="section-title text-center mb-60">
-              <span className="sub-title">OUr Roadmap</span>
+              <span className="sub-title">Nossos Precedentes</span>
               <h2 className="title">
-                Bigtech Strategy and <br /> Project <span>Plan</span>
+              Projetos de sucesso impulsionando a<br /><span> inovação tecnológica</span>
               </h2>
             </div>
           </div>

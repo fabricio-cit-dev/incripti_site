@@ -3,6 +3,12 @@ import { Link } from "react-router-dom";
 import logoImage from "../../../src/assets/img/logo/incript-logo.png";
 import { scrollToTop } from "../../lib/helpers";
 
+const handleScrollToSection = (sectionId) => {
+  const section = document.getElementById(sectionId);
+  if (section) {
+  section.scrollIntoView({ behavior: "smooth" });
+  }
+};
 const FooterOne = () => {
   return (
     <footer>
@@ -45,11 +51,6 @@ const FooterOne = () => {
                       </li>
                       <li>
                         <a href="#">
-                          <i className="fab fa-twitter"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
                           <i className="fab fa-facebook-f"></i>
                         </a>
                       </li>                      
@@ -63,23 +64,22 @@ const FooterOne = () => {
                   data-wow-delay=".4s"
                 >
                   <h4 className="fw-title">Links Utéis</h4>
-                  <div className="footer-link">
+                  <div className="footer-link">                  
                     <ul>
                       <li>
-                        <Link to="/#contact">Contato</Link>
+                        <Link to="/#about" onClick={() => handleScrollToSection("about")}>Sobre nós</Link>
                       </li>
                       <li>
-                        <Link to="/#about">Sobre nós</Link>
+                        <Link to="/#roadmap" onClick={() => handleScrollToSection("roadmap")}>Nossos precedentes</Link>
                       </li>
                       <li>
-                        <Link to="/#about">Porque nos escolher</Link>
+                        <Link to="/#faq"  onClick={() => handleScrollToSection("faq")}>Perguntas Frequentes</Link>
                       </li>
                       <li>
-                        <Link to="/#roadmap">Nosso Roadmap</Link>
-                      </li>
-                      <li>
-                        <Link to="/">Termos</Link>
-                      </li>
+                        <Link to="/#contact" onClick={() => handleScrollToSection("contact")}>Contato</Link>
+                      </li>          
+                      
+                      
                     </ul>
                   </div>
                 </div>
@@ -142,18 +142,6 @@ const FooterOne = () => {
               <div className="col-lg-6">
                 <div className="copyright-text">
                   <p>Copyright &copy; 2023. All Rights Reserved Incript</p>
-                </div>
-              </div>
-              <div className="col-lg-6 d-none d-sm-block">
-                <div className="footer-menu">
-                  <ul>
-                    <li>
-                      <Link to="#">Termos e condições</Link>
-                    </li>
-                    <li>
-                      <Link to="#">Política de privacidade</Link>
-                    </li>
-                  </ul>
                 </div>
               </div>
             </div>

@@ -22,7 +22,7 @@ const Banner = (props) => {
               <br/>
               <h2 className="title">Nossos Números:</h2>
 
-              <CountDownOne />
+              <CountDownOne /> 
             </div>
           </div>
         </div>

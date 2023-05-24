@@ -5,12 +5,12 @@ import SalesTabContent from "./SalesTabContent";
 
 const Sales = () => {
   const chart_info_list = [
-    "Contingency: 70%",
-    "Business Development: 10%",
-    "Investor: 30%",
-    "Poland",
-    "Legal & Regulation:10%",
-    "Czech Republic",
+    "Angular",
+    "JavaScript",
+    ".Net",
+    "React.JS",
+    "Node.JS",
+    "TypeScript",
   ];
 
   return (
@@ -36,21 +36,12 @@ const Sales = () => {
               >
                 <ul className="nav nav-tabs" id="myTab" role="tablist">
                   <SalesTabButton
-                    title="Funding Allocation"
+                    title="Tecnologias"
                     className="active"
                     id="funding-tab"
                     target="#funding"
                     ariaControls="funding"
                     ariaSelected={true}
-                  />
-
-                  <SalesTabButton
-                    title="Token Allocation"
-                    className=""
-                    id="token-tab"
-                    target="#token"
-                    ariaControls="token"
-                    ariaSelected={false}
                   />
                 </ul>
 
@@ -59,22 +50,9 @@ const Sales = () => {
                     className={"show active"}
                     id="funding"
                     ariaLabel="funding-tab"
-                    title="1 CNL = 0.0863 BTC"
-                    description=" The World’s 1st ICO Platform That Offers Rewards and The
-                    platform helps investors to make easy to purchase and
-                    sell their tokens"
-                    link="/"
-                  />
-
-                  <SalesTabContent
-                    className={""}
-                    id="token"
-                    ariaLabel="token-tab"
-                    title="2 CNL = 0.0967 BTC"
-                    description=" The World’s 1st ICO Platform That Offers Rewards and The
-                    platform helps investors to make easy to purchase and
-                    sell their tokens"
-                    link="/"
+                    title="Stack tecnológico"
+                    description=" Estamos sempre a procura das melhores linguagens e frameworks afim de oferecer o que tem de melhor no mercado."
+                    link="/#tecnologias"
                   />
                 </div>
               </div>

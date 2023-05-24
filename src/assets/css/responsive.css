@@ -725,7 +725,16 @@
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (max-width: 767.98px) {
+@media (max-width: 1000px) {
+  .banner-bg {
+    background-image: url(../img/banner/banner_bg.png);
+  }
+  .logo-animation {
+    justify-content: left;
+    align-items: left;
+    left: -10%;
+    margin-top: 17%;
+  }
   .custom-container {
     max-width: 100%;
   }
@@ -1061,10 +1070,15 @@
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 350px) and (max-width: 767px) {
   .banner-bg{
-    width: 100px !important;
-    height: 300px !important;
+    background-image: linear-gradient(25deg, #3e038d, #6704aa, #8e06c8, #b60be7);
+    height: 1080px;
+  }
+  .logo-animation {
+    justify-content: center;
+    align-items: center;
+    left: 10%;
   }
   .container,
   .custom-container {

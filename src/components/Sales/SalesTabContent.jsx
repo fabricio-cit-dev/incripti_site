@@ -2,6 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import cn from "classnames";
 
+const handleScrollToSection = (sectionId) => {
+  const section = document.getElementById(sectionId);
+  if (section) {
+  section.scrollIntoView({ behavior: "smooth" });
+  }
+};
 const SalesTabContent = (props) => {
   return (
     <div
@@ -13,8 +19,8 @@ const SalesTabContent = (props) => {
       <div className="chart-content-inner">
         <h2 className="title">{props.title}</h2>
         <p>{props.description}</p>
-        <Link to={props.link} className="btn">
-          Buy Now
+        <Link to="/#contact" to="/#contact" onClick={() => handleScrollToSection("contact")}className="btn">
+          Faça seu projeto conosco
         </Link>
       </div>
     </div>

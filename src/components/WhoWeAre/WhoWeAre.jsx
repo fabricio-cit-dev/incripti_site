@@ -2,6 +2,12 @@ import React from "react";
 import img01 from "../../assets/img/images/about_img01.png";
 import { Link } from "react-router-dom";
 
+const handleScrollToSection = (sectionId) => {
+  const section = document.getElementById(sectionId);
+  if (section) {
+  section.scrollIntoView({ behavior: "smooth" });
+  }
+};
 const WhoWeAre = (props) => {
   return (
     <section id="about" className="about-area pt-130 pb-130">
@@ -17,15 +23,16 @@ const WhoWeAre = (props) => {
               <div className="section-title mb-30">
                 <span className="sub-title">Quem nós somos?</span>
                 <h2 className="title">
-                  The World’s <span>1st ICO</span> Platform That Offers Rewards
+                Uma <span>nova era</span> de mudanças!
                 </h2>
               </div>
               <p>
-                The World’s 1st ICO Platform That Offers Rewards and The
-                platform helps investors to make easy to purchase and sell their
-                tokens
+              A empresa de desenvolvimento CIT se transformou em Incript! Nossa nova marca reflete nossa evolução,
+              paixão pela inovação e compromisso em fornecer a melhor experiência aos clientes. Continuaremos
+              entregando soluções de software personalizadas de alta qualidade para impulsionar o sucesso de nossos
+              clientes.
               </p>
-              <Link to="/" className="btn">
+              <Link to="/#contact" to="/#contact" onClick={() => handleScrollToSection("contact")} className="btn">
                 Faça seu projeto conosco
               </Link>
             </div>

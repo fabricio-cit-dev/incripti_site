@@ -59,9 +59,9 @@ const TeamOne = () => {
         <div className="row justify-content-center">
           <div className="col-xl-6">
             <div className="section-title text-center mb-70">
-              <span className="sub-title">OUr team</span>
+              <span className="sub-title">Nosso Time</span>
               <h2 className="title">
-                The Leadership <br /> <span>Team</span>
+                Uma equipe de <br /> <span>Liderança</span>
               </h2>
             </div>
           </div>

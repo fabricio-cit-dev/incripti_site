@@ -9,24 +9,25 @@ import WhitePaper from "../../components/WhitePaper/WhitePaper";
 import WhoWeAre from "../../components/WhoWeAre/WhoWeAre";
 import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
 import LayoutOne from "../../layouts/LayoutOne";
+import Faq from "../../components/Faq/Faq";
 
 const Home = () => {
   return (
     <LayoutOne>
       <main className="fix">
         <Banner />
+        <br/>
+        <TopPartners />
         <WhoWeAre />
 
-        <TopPartners />
+        
         <WhyChooseUs />
         <Sales />
-
+        <TeamOne />
         <div className="area-bg">
           <Roadmap />
-          <WhitePaper />
-        </div>
-
-        <TeamOne />
+          <Faq />
+        </div>        
         <ContactOne />
       </main>
     </LayoutOne>

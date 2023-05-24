@@ -29,26 +29,16 @@ const HeaderOne = () => {
 
   // mobile menu
   useEffect(() => {
-    //SubMenu Dropdown Toggle
-    if ($(".menu-area li.menu-item-has-children ul").length) {
-      $(".menu-area .navigation li.menu-item-has-children").append(
-        '<div class="dropdown-btn"><span class="fas fa-angle-down"></span></div>'
-      );
-    }
-
     //Mobile Nav Hide Show
     if ($(".mobile-menu").length) {
       let mobileMenuContent = $(".menu-area .main-menu").html();
       $(".mobile-menu .menu-box .menu-outer").append(mobileMenuContent);
 
-      //Dropdown Button
-      $(".mobile-menu li.menu-item-has-children .dropdown-btn").on(
-        "click",
-        function () {
-          $(this).toggleClass("open");
-          $(this).prev("ul").slideToggle(500);
-        }
-      );
+    if ($(".mobile-menu .menu-box .menu-outer").is(":empty")) {
+      let mobileMenuContent = $(".menu-area .main-menu").html();
+      $(".mobile-menu .menu-box .menu-outer").append(mobileMenuContent);
+    }    
+      
       //Menu Toggle Btn
       $(".mobile-nav-toggler").on("click", function () {
         $("body").addClass("mobile-menu-visible");
@@ -102,16 +92,6 @@ const HeaderOne = () => {
                         >
                           Principal
                         </Link>
-                        <ul className={cn("sub-menu")}>
-                          <li className={cn(pathname == "/" && "active")}>
-                            <NavLink to="/">Home One</NavLink>
-                          </li>
-                          <li
-                            className={cn(pathname == "/home-two" && "active")}
-                          >
-                            <NavLink to="/home-two">Home Two</NavLink>
-                          </li>
-                        </ul>
                       </li>
                       <li className={cn(hash == "#about" && "active")}>
                         <Link
@@ -128,7 +108,7 @@ const HeaderOne = () => {
                           className={"section-link"}
                           onClick={() => handleClickScroll("roadmap")}
                         >
-                          Roadmap
+                          Precedentes
                         </Link>
                       </li>                      
                       <li className={isActiveLink("#contact")}>
@@ -178,16 +158,6 @@ const HeaderOne = () => {
                       <li>
                         <a href="#">
                           <i className="fab fa-facebook-f"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fab fa-twitter"></i>
-                        </a>
-                      </li>                     
-                      <li>
-                        <a href="#">
-                          <i className="fab fa-youtube"></i>
                         </a>
                       </li>
                     </ul>

@@ -8,7 +8,7 @@ const ContactOne = () => {
       icon: "fa-envelope",
       content: (
         <>
-          company@gmail.com
+          contato@citechnology.com.br
         </>
       ),
     },
@@ -16,7 +16,7 @@ const ContactOne = () => {
       icon: "fa-phone",
       content: (
         <>
-          (61) 99774-2503
+          (61) 98346-3082
         </>
       ),
     },
@@ -24,9 +24,9 @@ const ContactOne = () => {
       icon: "fa-map-marker-alt",
       content: (
         <>
-          Localização: <br />
-          Quadra 702, loja 46 <br />
-          Asa Norte
+          Localizações: <br /> <br/>
+          Quadra 702, loja 46, Asa Norte<br /> <br />
+          Quadra 702, loja 46, Asa Norte
         </>
       ),
     },
