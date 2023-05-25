@@ -726,14 +726,13 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 1000px) {
-  .banner-bg {
-    background-image: url(../img/banner/banner_bg.png);
+  .banner-content .title {
+    margin-left: -10%;
   }
   .logo-animation {
-    justify-content: left;
-    align-items: left;
-    left: -10%;
-    margin-top: 17%;
+    right: -25%;
+    margin-top: -65%;
+
   }
   .custom-container {
     max-width: 100%;
@@ -1071,14 +1070,14 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media only screen and (min-width: 350px) and (max-width: 767px) {
-  .banner-bg{
-    background-image: linear-gradient(25deg, #3e038d, #6704aa, #8e06c8, #b60be7);
-    height: 1080px;
+  .banner-content .title{
+    margin-left: 5%;  
   }
   .logo-animation {
     justify-content: center;
     align-items: center;
-    left: 10%;
+    left: 0%;
+    margin-top: -15%;
   }
   .container,
   .custom-container {

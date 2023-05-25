@@ -24,8 +24,9 @@ const ContactOne = () => {
       icon: "fa-map-marker-alt",
       content: (
         <>
-          Localizações: <br /> <br/>
-          Quadra 702, loja 46, Asa Norte<br /> <br />
+          <span className="location1">Brasília</span> <br /> 
+          Quadra 702, loja 46, Asa Norte<br />
+          <span className="location2">Brasília</span> <br/>
           Quadra 702, loja 46, Asa Norte
         </>
       ),

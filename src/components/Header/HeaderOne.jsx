@@ -73,7 +73,7 @@ const HeaderOne = () => {
                 <nav className={"menu-nav"}>
                   <div className="logo">
                     <Link to={"/"}>
-                      <img src={logoImage} alt="BigTech Logo" />
+                      <img src={logoImage} alt="Incript Logo" />
                     </Link>
                   </div>
 
@@ -108,7 +108,7 @@ const HeaderOne = () => {
                           className={"section-link"}
                           onClick={() => handleClickScroll("roadmap")}
                         >
-                          Precedentes
+                          Como fazemos
                         </Link>
                       </li>                      
                       <li className={isActiveLink("#contact")}>
@@ -121,6 +121,20 @@ const HeaderOne = () => {
                         </Link>
                       </li>
                     </ul>
+                    <div className="social-navbar">
+                    <ul className="clearfix">
+                      <li>
+                        <a href="#">
+                          <i className="fab fa-linkedin-in"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i className="fab fa-instagram"></i>
+                        </a>
+                      </li>
+                    </ul>
+                    </div>  
                   </div>
                   <div className={cn("header-action", "d-none d-md-block")}>                    
                   </div>
@@ -141,27 +155,7 @@ const HeaderOne = () => {
 
                   <div className={"menu-outer"}>
                     {/* <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->  */}
-                  </div>
-
-                  <div className={"social-links"}>
-                    <ul className="clearfix">
-                      <li>
-                        <a href="#">
-                          <i className="fab fa-linkedin-in"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fab fa-instagram"></i>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fab fa-facebook-f"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                  </div>                  
                 </nav>
               </div>
 

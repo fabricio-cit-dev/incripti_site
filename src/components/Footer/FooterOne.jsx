@@ -48,12 +48,7 @@ const FooterOne = () => {
                         <a href="#">
                           <i className="fab fa-instagram"></i>
                         </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fab fa-facebook-f"></i>
-                        </a>
-                      </li>                      
+                      </li>                     
                     </ul>
                   </div>
                 </div>

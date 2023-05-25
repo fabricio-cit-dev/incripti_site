@@ -421,6 +421,41 @@ label {
 .navbar-wrap > ul > li:hover > a {
   color: #fff;
 }
+.social-navbar ul {
+  text-align: right;
+  padding: 30px 20px 20px;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.social-navbar li {
+  position: relative;
+  display: inline-block;
+  margin: 0px 6px 10px;
+}
+
+.social-navbar li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  line-height: 32px;
+  font-size: 16px;
+  color: #fff;
+  transition: all 500ms ease;
+  border: 1px solid rgb(255 255 255 / 10%);
+  border-radius: 3px;
+}
+
+.social-navbar li a:hover {
+  border-color: rgb(199, 196, 2);
+  background: rgb(199, 196, 2);
+  color: #fff;
+}
+
 .main-menu .navigation li.menu-item-has-children .dropdown-btn {
   display: none;
 }
@@ -904,7 +939,10 @@ label {
   margin-bottom: 25px;
 }
 .banner-content .title {
+  float: left;
   font-size: 55px;
+  margin-top: 20%;
+  margin-left: -25%;
   margin-bottom: 45px;
   line-height: 1.4;
   letter-spacing: -0.01em;
@@ -991,37 +1029,60 @@ label {
 .banner-progress-wrap .title span {
   margin-left: auto;
 }
-.banner-countdown-wrap .title {
-  font-size: 26px;
-  margin-bottom: 15px;
-  letter-spacing: -0.01em;
+
+.number-title {
+  font-size: 52px;
+  margin-bottom: 24px;
+  font-weight: 500;
+  text-transform: none;
+  line-height: 1.27;
+  color: #fff;
+  text-align: center;
 }
-.banner-countdown-wrap .coming-time {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+
+.number-title span{
+  font-size: 52px;
+  margin-bottom: 24px;
+  font-weight: 500;
+  text-transform: none;
+  line-height: 1.27;
+  color: rgb(226, 222, 0);
 }
-.banner-countdown-wrap .coming-time .time-count {
-  min-width: 162px;
-  min-height: 96px;
+
+.banner-countdown-wrap {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 10px;
-  position: relative;
-  margin: 20px 17.5px 0;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1;
+}
+
+.banner-countdown,
+.time-count-hour,
+.time-count-min,
+.time-count-sec {
+  margin-left: 17%;
+}
+
+.banner-countdown,
+.time-count-hour,
+.time-count-min,
+.time-count-sec {
+  width: 14%;
+  height: 120px;
+  text-align: center;
+  display: inline-block;
   background: #31044d;
   border: 1px solid rgba(255, 255, 255, 0.04);
-  border-radius: 5px;
+  border-radius: 8px;
+  padding: 5px;
   color: #a4b4c3;
-  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: -14%;
 }
-.banner-countdown-wrap .coming-time .time-count span {
+
+.banner-countdown span,
+.time-count-hour span,
+.time-count-min span,
+.time-count-sec span {
   font-size: 35px;
   font-weight: 600;
   color: #f3f702;
@@ -1029,15 +1090,6 @@ label {
   display: block;
   font-family: "Poppins", sans-serif;
   letter-spacing: 1px;
-}
-.banner-countdown-wrap .coming-time .time-count.hour span {
-  color: #f3f702;
-}
-.banner-countdown-wrap .coming-time .time-count.min span {
-  color: #f3f702;
-}
-.banner-countdown-wrap .coming-time .time-count.sec span {
-  color: #f3f702;
 }
 @keyframes alltuchtopdown {
   0% {
@@ -1072,12 +1124,12 @@ label {
 }
 
 .logo-animation { 
-  float: left;
-  position: fixed;
-  left: 17%;
-  top: 45%;
-  width: 300px;
-  height: 280px;; 
+  float: right;
+  position: relative;
+  right: -20%;
+  margin-top: -55%;
+  width: 900px;
+  height: auto;
   animation-name: rotate;
   animation-duration: 4s; 
   animation-iteration-count: infinite; 
@@ -2935,6 +2987,12 @@ label {
 }
 .contact-info-wrap .row [class*="col-"]:nth-child(4) .icon-background::before {
   border-color: #00c4f4;
+}
+.location1 span {
+  background-color: rgb(243, 239, 1);
+}
+.location2 span {
+  background-color: rgb(243, 239, 1);
 }
 .contact-form-wrap {
   background-image: linear-gradient(180deg, #3e038d, #520386, #7505a5, #9407bb);

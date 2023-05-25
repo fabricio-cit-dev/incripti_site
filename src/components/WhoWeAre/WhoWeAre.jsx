@@ -32,7 +32,7 @@ const WhoWeAre = (props) => {
               entregando soluções de software personalizadas de alta qualidade para impulsionar o sucesso de nossos
               clientes.
               </p>
-              <Link to="/#contact" to="/#contact" onClick={() => handleScrollToSection("contact")} className="btn">
+              <Link to="/#contact" onClick={() => handleScrollToSection("contact")} className="btn">
                 Faça seu projeto conosco
               </Link>
             </div>
