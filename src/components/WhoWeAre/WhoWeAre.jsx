@@ -10,7 +10,7 @@ const handleScrollToSection = (sectionId) => {
 };
 const WhoWeAre = (props) => {
   return (
-    <section id="about" className="about-area pt-130 pb-130">
+    <section id="about" className="about-area-pt-130-pb-130">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6">

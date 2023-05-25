@@ -72,7 +72,7 @@ const HeaderOne = () => {
               <div className="menu-wrap">
                 <nav className={"menu-nav"}>
                   <div className="logo">
-                    <Link to={"/"}>
+                    <Link to={"#header"}>
                       <img src={logoImage} alt="Incript Logo" />
                     </Link>
                   </div>
@@ -90,7 +90,7 @@ const HeaderOne = () => {
                           className={"section-link"}
                           onClick={() => handleClickScroll("header")}
                         >
-                          Principal
+                          Home
                         </Link>
                       </li>
                       <li className={cn(hash == "#about" && "active")}>
@@ -111,6 +111,15 @@ const HeaderOne = () => {
                           Como fazemos
                         </Link>
                       </li>                      
+                      <li className={isActiveLink("#portfolio")}>
+                        <Link
+                          to="#portfolio"
+                          className={"section-link"}
+                          onClick={() => handleClickScroll("portfolio")}
+                        >
+                          Portfólio
+                        </Link>
+                      </li>
                       <li className={isActiveLink("#contact")}>
                         <Link
                           to="#contact"
@@ -120,21 +129,34 @@ const HeaderOne = () => {
                           Contato
                         </Link>
                       </li>
+                      
                     </ul>
                     <div className="social-navbar">
-                    <ul className="clearfix">
-                      <li>
-                        <a href="#">
-                          <i className="fab fa-linkedin-in"></i>
-                        </a>
+                      <ul className="clearfix">
+                        <li>
+                          <a href="#">
+                            <i className="fab fa-linkedin-in"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <i className="fab fa-instagram"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className={cn("header-action", "d-none d-md-block")}>
+                    <ul>
+                      <li className={"header-lang"}>
+                        <span className={"selected-lang"}>PT-BR</span>
+                        <ul className={"lang-list"}>
+                          <li>
+                            <Link to="#">EN-US</Link>
+                          </li>
+                        </ul>
                       </li>
-                      <li>
-                        <a href="#">
-                          <i className="fab fa-instagram"></i>
-                        </a>
-                      </li>
-                    </ul>
-                    </div>  
+                    </ul>                      
+                    </div>        
                   </div>
                   <div className={cn("header-action", "d-none d-md-block")}>                    
                   </div>

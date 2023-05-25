@@ -36,7 +36,7 @@ const Sales = () => {
               >
                 <ul className="nav nav-tabs" id="myTab" role="tablist">
                   <SalesTabButton
-                    title="Tecnologias"
+                    title="Cases"
                     className="active"
                     id="funding-tab"
                     target="#funding"

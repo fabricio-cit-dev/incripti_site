@@ -726,13 +726,21 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 1000px) {
+  .banner-bg {
+    height: 100%;
+  }
   .banner-content .title {
-    margin-left: -10%;
+    margin-left: -5%;
   }
   .logo-animation {
     right: -25%;
     margin-top: -65%;
-
+  }
+  .banner-countdown,
+  .time-count-hour,
+  .time-count-min,
+  .time-count-sec {
+    height: 27vw;
   }
   .custom-container {
     max-width: 100%;
@@ -1078,6 +1086,16 @@
     align-items: center;
     left: 0%;
     margin-top: -15%;
+  }
+  .banner-countdown,
+  .time-count-hour,
+  .time-count-min,
+  .time-count-sec {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    margin-bottom: 10px;
   }
   .container,
   .custom-container {
