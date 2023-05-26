@@ -10,7 +10,6 @@ import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
 import LayoutOne from "../../layouts/LayoutOne";
 import Faq from "../../components/Faq/Faq";
 import CountDownOne from "../../components/CountDown/CountDownOne";
-import WhitePaper from "../../components/WhitePaper/WhitePaper";
 
 const Home = () => {
   return (

@@ -3,7 +3,7 @@ import cn from "classnames";
 
 const ContactOneInfoItem = (props) => {
   return (
-    <div className="contact-info-item">
+    <div className={cn("contact-info-item", props.additionalClass)}>
       <div className="icon">
         <span className="icon-background"></span>
         <i className={cn("fas", props.item.icon)}></i>

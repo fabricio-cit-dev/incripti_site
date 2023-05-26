@@ -25,9 +25,16 @@ const ContactOne = () => {
       content: (
         <>
           <span className="location1">Brasília</span> <br /> 
-          Quadra 702, loja 46, Asa Norte<br />
-          <span className="location2">Brasília</span> <br/>
-          Quadra 702, loja 46, Asa Norte
+          Quadra 702, loja 46, Asa Norte <br /> DF 70720-600, BR        
+        </>
+      ),
+    },
+    {
+      icon: "fa-map-marker-alt",
+      content: (
+        <>
+          <span className="location2">Orlando</span> <br /> 
+          10690 Petrillo Way, Winter Garden <br/> FL 34787, USA          
         </>
       ),
     },
@@ -51,11 +58,18 @@ const ContactOne = () => {
         {/* secction info */}
         <div className="contact-info-wrap">
           <div className="row justify-content-center">
-            {info_items.map((x, index) => (
-              <div key={index} className="col-lg-4 col-sm-6">
-                <ContactOneInfoItem item={x} />
-              </div>
-            ))}
+            <div className="col-lg-6 col-sm-6"> {/* Coluna 1 */}
+              <ContactOneInfoItem item={info_items[0]} />
+            </div>
+            <div className="col-lg-6 col-sm-6">
+            <ContactOneInfoItem item={info_items[1]} />
+            </div>
+            <div className="col-lg-6 col-sm-6"> {/* Coluna 2 */}
+              <ContactOneInfoItem item={info_items[2]} />              
+            </div>
+            <div className="col-lg-6 col-sm-6">
+              <ContactOneInfoItem item={info_items[3]} />
+            </div>
           </div>
         </div>
 

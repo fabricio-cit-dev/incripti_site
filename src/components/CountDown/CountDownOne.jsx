@@ -14,7 +14,7 @@ const CountDownOne = () => {
           </div>
           <div className="time-count-min">
             
-            <span>154K+</span>Chícaras de café
+            <span>154K+</span>Xícaras de café
           </div>
           <div className="time-count-sec">
             
