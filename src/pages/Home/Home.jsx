@@ -23,14 +23,11 @@ const Home = () => {
         <br/>        
         <br/>        
         <WhyChooseUs />
-        <CountDownOne />
         <Sales />
         <TeamOne />
         <div className="area-bg">
           <Roadmap />
-          <Faq />
-        </div>        
-        <ContactOne />
+        </div>
       </main>
     </LayoutOne>
   );

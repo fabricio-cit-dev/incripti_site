@@ -80,7 +80,7 @@ const Faq = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className="section-title section-title-two text-center mb-60">
-              <h2 className="title">Perguntas Frequentes</h2>
+              <h2 className="title-faq">Perguntas Frequentes</h2>
             </div>
 
             <div className="faq-wrap wow fadeInUp" data-wow-delay=".2s">

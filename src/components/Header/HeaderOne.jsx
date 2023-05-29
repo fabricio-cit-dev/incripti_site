@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import cn from "classnames";
 import logoImage from "../../../src/assets/img/logo/incript-logo.png";
 import $ from "jquery";

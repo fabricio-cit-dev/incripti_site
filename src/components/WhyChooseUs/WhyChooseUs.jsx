@@ -4,7 +4,9 @@ import icon01 from "../../assets/img/icon/choose_icon01.svg";
 import icon02 from "../../assets/img/icon/choose_icon02.svg";
 import icon03 from "../../assets/img/icon/choose_icon03.svg";
 import icon04 from "../../assets/img/icon/choose_icon04.svg";
+import icon05 from "../../assets/img/icon/choose_icon05.svg";
 import WhyChooseUsItem from "./WhyChooseUsItem";
+import CountDownOne from "../CountDown/CountDownOne";
 
 const WhyChooseUs = () => {
   const slickSettings = {
@@ -55,64 +57,84 @@ const WhyChooseUs = () => {
       src: icon01,
       alt: "",
       link: "/",
-      title: "Preços competitivos",
-      description: `Oferecemos soluções de software de qualidade a preços acessíveis, proporcionando um excelente retorno 
-      sobre o investimento para o seu negócio.`,
+      title: "Team Allocation",
+      description: `Contamos com uma equipe especializada e altamente 
+      capacitada para alocar os melhores profissionais de desenvolvimento em seus projetos. Trabalhamos em conjunto para alcançar 
+      resultados excepcionais.`,
     },
     {
       src: icon02,
       alt: "",
       link: "/",
-      title: "Qualidade Excepcional",
-      description: `Nossos softwares são desenvolvidos com alto padrão de qualidade, garantindo funcionalidade, 
-      usabilidade e desempenho superiores.`,
+      title: "UI / UX",
+      description: `Acreditamos na importância de uma experiência de usuário incrível. Nossa equipe de design 
+      cria interfaces intuitivas e visualmente atraentes, garantindo que seus usuários se encantem com seu software.`,
     },
     {
       src: icon03,
       alt: "",
       link: "/",
-      title: "Privacidade Garantida",
-      description: `Respeitamos a privacidade dos dados de nossos clientes e asseguramos a confidencialidade absoluta das informações do seu negócio.`,
+      title: "Digital Transformation",
+      description: `Ajudamos sua empresa a se adaptar e prosperar na era digital. 
+      Através de soluções inovadoras, transformamos processos tradicionais em experiências digitais eficientes e modernas.`,
     },
     {
       src: icon04,
       alt: "",
       link: "/",
-      title: "Segurança em Primeiro Lugar",
-      description: `Protegemos seus dados com rigor, adotando as melhores práticas de segurança cibernética. 
-      Sua tranquilidade é nossa prioridade.`,
-    },                   
+      title: "Software",
+      description: `Desenvolvemos software personalizado que atende às 
+      necessidades exclusivas do seu negócio. Do planejamento à implementação, criamos soluções de software poderosas e escaláveis.`,
+    },                  
+    {
+      src: icon05,
+      alt: "",
+      link: "/",
+      title: "ERP",
+      description: `Simplifique sua gestão empresarial com nosso sistema integrado de recursos. 
+      Nosso ERP oferece uma visão abrangente e centralizada de suas operações, impulsionando a eficiência e o crescimento.`,
+    },                
     {
       src: icon01,
       alt: "",
       link: "/",
-      title: "Preços competitivos",
-      description: `Oferecemos soluções de software de qualidade a preços acessíveis, proporcionando um excelente retorno 
-      sobre o investimento para o seu negócio.`,
+      title: "Team Allocation",
+      description: `Contamos com uma equipe especializada e altamente 
+      capacitada para alocar os melhores profissionais de desenvolvimento em seus projetos. Trabalhamos em conjunto para alcançar 
+      resultados excepcionais.`,
     },
     {
       src: icon02,
       alt: "",
       link: "/",
-      title: "Qualidade Excepcional",
-      description: `Nossos softwares são desenvolvidos com alto padrão de qualidade, garantindo funcionalidade, 
-      usabilidade e desempenho superiores.`,
+      title: "UI / UX",
+      description: `Acreditamos na importância de uma experiência de usuário incrível. Nossa equipe de design 
+      cria interfaces intuitivas e visualmente atraentes, garantindo que seus usuários se encantem com seu software.`,
     },
     {
       src: icon03,
       alt: "",
       link: "/",
-      title: "Privacidade Garantida",
-      description: `Respeitamos a privacidade dos dados de nossos clientes e asseguramos a confidencialidade absoluta das informações do seu negócio.`,
+      title: "Digital Transformation",
+      description: `Ajudamos sua empresa a se adaptar e prosperar na era digital. 
+      Através de soluções inovadoras, transformamos processos tradicionais em experiências digitais eficientes e modernas.`,
     },
     {
       src: icon04,
       alt: "",
       link: "/",
-      title: "Segurança em Primeiro Lugar",
-      description: `Protegemos seus dados com rigor, adotando as melhores práticas de segurança cibernética. 
-      Sua tranquilidade é nossa prioridade.`,
-    },                   
+      title: "Software",
+      description: `Desenvolvemos software personalizado que atende às 
+      necessidades exclusivas do seu negócio. Do planejamento à implementação, criamos soluções de software poderosas e escaláveis.`,
+    },                  
+    {
+      src: icon05,
+      alt: "",
+      link: "/",
+      title: "ERP",
+      description: `Simplifique sua gestão empresarial com nosso sistema integrado de recursos. 
+      Nosso ERP oferece uma visão abrangente e centralizada de suas operações, impulsionando a eficiência e o crescimento.`,
+    },               
   ];
 
   const initalState = 0;
@@ -120,7 +142,7 @@ const WhyChooseUs = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCount((old) => (old == 6 ? 0 : old + 1));
+      setCount((old) => (old === 6 ? 0 : old + 1));
     }, 3000);
 
     return () => clearInterval(interval);
@@ -161,7 +183,6 @@ const WhyChooseUs = () => {
             className="slide-filler"
           />
         </div>
-
         {/* <div
           className="slide-progress"
           role="progressbar"
