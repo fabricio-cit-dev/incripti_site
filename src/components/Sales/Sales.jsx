@@ -6,7 +6,6 @@ import aparty from "../../assets/img/projects/APARTY MOCKUP 2.png"
 import Ares from "../../assets/img/projects/ares mockup sem fundo.png";
 import ms from "../../assets/img/projects/mockup ms sem fundo.png";
 import cl from "../../assets/img/projects/mockup tela sem fundo.png";
-import NossosParceiros from "./parceiros";
 
 const Sales = () => {
   return (

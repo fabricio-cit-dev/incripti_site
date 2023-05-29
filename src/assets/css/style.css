@@ -42,12 +42,18 @@ body {
   font-style: normal;
   background-color: #31044d;
   line-height: 1.75;
-  overflow-x: hidden; 
 }
 html, body {
   height: 100%;
   margin: 0;
-  padding: 0;
+  padding: 0;  
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 body.white-background,
 .white-background 
@@ -912,6 +918,8 @@ label {
   position: relative;
   z-index: 1;
   overflow: hidden;
+  scroll-snap-type: y mandatory; 
+  scroll-snap-align: start;
 }
 .banner-bg::before {
   content: "";
@@ -1140,7 +1148,7 @@ label {
   float: right;
   position: relative;
   right: -20%;
-  margin-top: -42%;
+  margin-top: -50%;
   width: 900px;
   height: auto;
   animation-name: rotate;
@@ -1443,6 +1451,8 @@ label {
   width: 100%;
   margin: 0;
   padding: 0;
+  scroll-snap-type: y mandatory; 
+  scroll-snap-align: start;
 }
 .about-img {
   position: relative;
@@ -1615,6 +1625,8 @@ label {
   width: 100%;
   margin: 0;
   padding: 0;
+  scroll-snap-type: y mandatory; 
+  scroll-snap-align: start;
 }
 .choose-area .row {
   margin: 0 -10px;
@@ -1745,6 +1757,8 @@ label {
   display: flex;
   justify-content: space-between; 
   align-items: center;
+  scroll-snap-type: y mandatory; 
+  scroll-snap-align: start;
 }
 .chart-area {
   height: 45vw;
@@ -2130,7 +2144,9 @@ label {
   width: 100%;
   margin: 0;
   padding: 0;
-  background: linear-gradient(360deg, #44007c 0%, rgba(11, 29, 51, 0) 97.51%);
+  background-image: linear-gradient(75deg, #1d014b, #31106e, #341670, #3e0f6a, #460564);
+  scroll-snap-type: y mandatory; 
+  scroll-snap-align: start;
 }
 .roadmap-area::before {
   content: "";
@@ -2466,6 +2482,8 @@ label {
 .team-area {
   position: relative;
   z-index: 1;
+  scroll-snap-type: y mandatory; 
+  scroll-snap-align: start;
 }
 .team-area::before {
   content: "";
@@ -3468,6 +3486,8 @@ select:focus {
 .footer-area {
   position: relative;
   z-index: 1;
+  scroll-snap-type: y mandatory; 
+  scroll-snap-align: start;
 }
 .footer-area::before {
   content: "";
@@ -3638,6 +3658,40 @@ select:focus {
 }
 .footer-menu ul li a:hover {
   color: #fff;
+}
+.footer-contacts {
+  float: right;
+  margin-right: 30px;
+}
+
+.footer-contacts span {
+  font-size: 24px;
+  color: rgb(243, 239, 1);
+  text-shadow: 5px 5px 4px rgb(34, 3, 53);
+}
+
+.location-container {
+  display: flex;
+  margin-top: 10px;
+}
+
+.location-container > div {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.email-contact {
+  font-family: "Outfit", sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+  color: rgb(226, 222, 0);
+  text-shadow: 5px 5px 4px rgb(34, 3, 53);
+  margin-right: 20px; 
+  margin-top: -40%;
+}
+
+.phone-number {
+  color: #ff0000; /* Define a cor desejada para os números de telefone */
 }
 
 /* footer-two */
