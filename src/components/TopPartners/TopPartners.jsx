@@ -1,32 +1,24 @@
 import React from "react";
-import img01 from "../../assets/img/partner/partner_img01.png";
-import img02 from "../../assets/img/partner/partner_img02.png";
-import img03 from "../../assets/img/partner/partner_img03.png";
-import img04 from "../../assets/img/partner/partner_img04.png";
-import img05 from "../../assets/img/partner/partner_img05.png";
-import img06 from "../../assets/img/partner/partner_img06.png";
-import img07 from "../../assets/img/partner/partner_img07.png";
-import img08 from "../../assets/img/partner/partner_img08.png";
-import img09 from "../../assets/img/partner/partner_img09.png";
-import img10 from "../../assets/img/partner/partner_img10.png";
+import img01 from "../../assets/img/parceiros/logo-msfintech.png";
+import img02 from "../../assets/img/parceiros/Weria PNG 06 Artboard 6 Copy 4.png";
+import img03 from "../../assets/img/parceiros/Logo_Newin.png";
+import img04 from "../../assets/img/parceiros/AresLogo.png";
+import img05 from "../../assets/img/parceiros/Bz__01_Artboard_498-removebg-preview.png";
 
 const TopPartners = () => {
   const partners_list = [
-    { src: img01, title: "empresa1" },
-    { src: img02, title: "empresa2" },
-    { src: img03, title: "empresa3" },
-    { src: img04, title: "empresa4" },
-    { src: img05, title: "empresa5" },
-    { src: img06, title: "empresa6" },
-    { src: img07, title: "empresa7" },
-    { src: img08, title: "empresa8" },
-    { src: img09, title: "empresa9" },
-    { src: img10, title: "empresa10" },
+    { src: img01, title: "ms" },
+    { src: img02, title: "weria" },
+    { src: img03, title: "newin" },
+    { src: img04, title: "ares" },
+    { src: img05, title: "bztech" },
   ];
 
   return (
     <div className="partner-area pb-130">
       <div className="container">
+        <br />
+        <br />
         <div className="row justify-content-center">
           <div className="col-lg-8">
             <div className="section-title text-center mb-10">

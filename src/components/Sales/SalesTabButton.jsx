@@ -3,19 +3,18 @@ import cn from "classnames";
 
 const SalesTabButton = (props) => {
   return (
-    <li className="nav-item" role="presentation">
-      <button
-        className={cn("nav-link", props.className)}
+    <li className="nav-item">
+      <a
+        className={cn("nav-link", { active: props.className === "active" })}
         id={props.id}
-        data-bs-toggle="tab"
-        data-bs-target={props.target}
-        type="button"
+        data-toggle="tab"
+        href={`#${props.id}`}
         role="tab"
-        aria-controls={props.ariaControls}
-        aria-selected={props.ariaSelected}
+        aria-controls={props.id}
+        aria-selected={props.className === "active"}
       >
         {props.title}
-      </button>
+      </a>
     </li>
   );
 };
