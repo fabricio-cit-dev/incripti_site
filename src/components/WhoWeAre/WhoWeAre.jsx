@@ -21,6 +21,9 @@ const WhoWeAre = (props) => {
           <div className="col-lg-6">
             <div className="about-content wow fadeInRight" data-wow-delay=".2s">
               <div className="section-title mb-30">
+                <br />
+                <br />
+                <br />
                 <span className="sub-title">Quem nós somos?</span>
                 <h2 className="title">
                 Uma <span>nova era</span> de mudanças!

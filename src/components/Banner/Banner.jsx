@@ -12,7 +12,7 @@ const handleScrollToSection = (sectionId) => {
 
 const Banner = (props) => {
   return (
-    <section className="banner-area banner-bg">
+    <section id="banner" className="banner-area banner-bg">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-10">
@@ -25,7 +25,13 @@ const Banner = (props) => {
                   Faça seu projeto conosco
                 </Link>
               </div>
-              <img src={logo} className="logo-animation"></img>              
+              <img src={logo} className="logo-animation"></img>
+              <div className="banner-line">
+                <div className="line"></div>
+                <Link to="/#about" onClick={() => handleScrollToSection("about")} className="read-more">
+                  Leia mais
+                </Link>
+              </div>              
             </div>            
           </div>
         </div>        

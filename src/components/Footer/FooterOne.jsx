@@ -12,7 +12,7 @@ const handleScrollToSection = (sectionId) => {
 };
 const FooterOne = () => {
   return (
-    <footer>
+    <footer id="footer">
       <div className="footer-area">
         <div className="container">
           <div className="footer-scroll-wrap">

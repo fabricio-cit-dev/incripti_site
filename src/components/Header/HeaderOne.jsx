@@ -72,7 +72,7 @@ const HeaderOne = () => {
               <div className="menu-wrap">
                 <nav className={"menu-nav"}>
                   <div className="logo">
-                    <Link to={"#header"}>
+                    <Link to={"#banner"}>
                       <img src={logoImage} alt="Incript Logo" />
                     </Link>
                   </div>
@@ -86,9 +86,9 @@ const HeaderOne = () => {
                         )}
                       >
                         <Link
-                          to="#header"
+                          to="#banner"
                           className={"section-link"}
-                          onClick={() => handleClickScroll("header")}
+                          onClick={() => handleClickScroll("banner")}
                         >
                           Home
                         </Link>
@@ -120,11 +120,11 @@ const HeaderOne = () => {
                           Portfólio
                         </Link>
                       </li>
-                      <li className={isActiveLink("#contact")}>
+                      <li className={isActiveLink("#footer")}>
                         <Link
-                          to="#contact"
+                          to="#footer"
                           className={"section-link"}
-                          onClick={() => handleClickScroll("contact")}
+                          onClick={() => handleClickScroll("footer")}
                         >
                           Contato
                         </Link>

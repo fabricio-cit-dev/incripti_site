@@ -1,10 +1,3 @@
-/*
-  Theme Name: Bigtech - ICO & Crypto Landing Page Template
-  Support: themegenix@gmail.com
-  Description: Bigtech - ICO & Crypto Landing Page Template.
-  Version: 1.0
-*/
-
 /* CSS Index
 -----------------------------------
 
@@ -43,17 +36,33 @@ body {
   background-color: #31044d;
   line-height: 1.75;
 }
+.html{
+  scroll-snap-type: y mandatory;
+  scroll-snap-align: start;
+  overflow: scroll;
+}
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;  
 }
-body::-webkit-scrollbar {
+.home {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  position: relative;
+  scrollbar-width: none;
+  -ms-overflow-style: none; 
+}
+::-webkit-scrollbar {
   display: none;
 }
 body {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+.home > * {
+  scroll-snap-align: start;
 }
 body.white-background,
 .white-background 
@@ -357,9 +366,9 @@ label {
   max-width: 1200px;
 }
 .transparent-header {
-  position: absolute;
+  position: fixed;
   left: 0;
-  top: 0px;
+  top: 0;
   width: 100%;
   z-index: 9;
   height: auto;
@@ -909,17 +918,13 @@ label {
 /* 4. Banner */
 .banner-bg {
   background-image: url(../img/banner/banner_bg.png);
-  height: 45vw;
-  width: 100%;
+  height: 90vh;
   margin: 0;
   padding: 0;
   background-position: center;
   background-size: cover;
   position: relative;
   z-index: 1;
-  overflow: hidden;
-  scroll-snap-type: y mandatory; 
-  scroll-snap-align: start;
 }
 .banner-bg::before {
   content: "";
@@ -953,6 +958,25 @@ label {
   bottom: 14%;
   animation: alltuchtopdown 3s infinite linear;
 }
+.banner-line {
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+  display: flex;
+  align-items: center;
+}
+.banner-line .line {
+  width: 3px;
+  height: 18vh;
+  background-color: #ffffff;
+  margin-right: 10px;
+}
+.banner-line .read-more {
+  color: #e0e21b;
+  font-size: 16px;
+  font-weight: bold;  
+  text-decoration: underline;
+}
 .banner-content img {
   margin-bottom: 25px;
 }
@@ -961,7 +985,7 @@ label {
   font-size: 55px;
   margin-top: 28%;
   margin-left: -25%;
-  margin-bottom: 45px;
+  margin-bottom: 25px;
   line-height: 1.4;
   letter-spacing: -0.01em;
 }
@@ -1163,13 +1187,36 @@ label {
 }
 
 .banner-button .btn {
-  background-image: linear-gradient(25deg, #712ff0, #b170b9, #ceab7d, #dae610);
+  user-select: none;
+  -moz-user-select: none;
+  background: rgb(152, 30, 226);
+  border-radius: 70px;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  border: 2px solid transparent;
+  color: #fff;
+  box-shadow: 0px 6px 22px rgba(6, 34, 51, 0.22);
+  transition: all 0.4s 0s;
+  background-clip: padding-box;
+  white-space: nowrap;
   min-width: 200px;
   padding: 21px 50px;
+}
+.banner-button::after {
+  margin: -2px;
+  background: linear-gradient(
+    90deg,
+    rgba(224, 226, 27, 1) 0%,
+    rgb(96, 16, 150) 49%,
+    rgba(224, 226, 27, 1) 100%
+  );
+  border-radius: 70px;
+  transition: all 0.4s ease 0s;
 }
 
 .banner-button .btn:hover {
   color: rgb(243, 239, 1);
+  border-color: #e0e21b;
 }
 .banner-button .btn::after{
   display: none;
@@ -1447,12 +1494,9 @@ label {
 
 /* 7. Sobre nós */
 .about-area-pt-130-pb-130 {
-  height: 40vw;
-  width: 100%;
+  height: 90vh;
   margin: 0;
-  padding: 0;
-  scroll-snap-type: y mandatory; 
-  scroll-snap-align: start;
+  padding: 0;  
 }
 .about-img {
   position: relative;
@@ -1507,7 +1551,7 @@ label {
   color: #a4b4c3;
 }
 .partner-wrap {
-  height: 30vw;
+  height: 90vh;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -1621,12 +1665,9 @@ label {
 
 /* 8. Pq nos escolher */
 .choose-area {
-  height: 45vw;
-  width: 100%;
+  height: 90vh;
   margin: 0;
   padding: 0;
-  scroll-snap-type: y mandatory; 
-  scroll-snap-align: start;
 }
 .choose-area .row {
   margin: 0 -10px;
@@ -1753,18 +1794,18 @@ label {
 
 /* 9. Logo abaixo do porque nos escolher */
 .chart-inner {
-  padding: 0 30px;
+  height: 40%;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-between; 
   align-items: center;
-  scroll-snap-type: y mandatory; 
-  scroll-snap-align: start;
 }
 .chart-area {
-  height: 45vw;
-  width: 100%;
+  height: 90vh;
   margin: 0;
   padding: 0; 
+  display: flex;
 }
 .chart-bg {
   background: rgb(209, 109, 223);
@@ -1825,12 +1866,34 @@ label {
   margin-top: -2vw;
 }
 .chart-content-inner .btn {
-  background-image: linear-gradient(25deg, #712ff0, #b170b9, #ceab7d, #dae610);
+  user-select: none;
+  -moz-user-select: none;
+  background: rgb(152, 30, 226);
+  border-radius: 70px;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  border: 2px solid transparent;
+  box-shadow: 0px 6px 22px rgba(6, 34, 51, 0.22);
+  transition: all 0.4s 0s;
+  background-clip: padding-box;
+  white-space: nowrap;
   min-width: 200px;
   padding: 21px 50px;
 }
+.chart-content-inner .btn::after{
+  margin: -2px;
+  background: linear-gradient(
+    90deg,
+    rgba(224, 226, 27, 1) 0%,
+    rgb(96, 16, 150) 49%,
+    rgba(224, 226, 27, 1) 100%
+  );
+  border-radius: 70px;
+  transition: all 0.4s ease 0s;
+}
 .chart-content-inner .btn:hover {
   color: rgb(243, 239, 1);
+  border-color: rgb(243, 239, 1);
 }
 .chart-content-inner .btn::after {
   display: none;
@@ -2140,13 +2203,10 @@ label {
   position: relative;
   z-index: 1;
   overflow: hidden;
-  height: 42vw;
-  width: 100%;
+  height: 90vh;
   margin: 0;
   padding: 0;
   background-image: linear-gradient(75deg, #1d014b, #31106e, #341670, #3e0f6a, #460564);
-  scroll-snap-type: y mandatory; 
-  scroll-snap-align: start;
 }
 .roadmap-area::before {
   content: "";
@@ -2479,11 +2539,15 @@ label {
 }
 
 /* 13. Team */
+.team-wrapper {
+  height: 100%;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
 .team-area {
+  height: 100%;
+  width: 100%;
   position: relative;
-  z-index: 1;
-  scroll-snap-type: y mandatory; 
-  scroll-snap-align: start;
 }
 .team-area::before {
   content: "";
@@ -3484,10 +3548,9 @@ select:focus {
 
 /* 20. Footer */
 .footer-area {
+  height: 64vh;
   position: relative;
   z-index: 1;
-  scroll-snap-type: y mandatory; 
-  scroll-snap-align: start;
 }
 .footer-area::before {
   content: "";
@@ -3544,7 +3607,9 @@ select:focus {
   margin-bottom: 30px;
 }
 .footer-widget .f-logo {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  width: 400px;
+  height: auto;
   display: block;
 }
 .footer-titulo {
@@ -3682,16 +3747,11 @@ select:focus {
 
 .email-contact {
   font-family: "Outfit", sans-serif;
-  font-weight: bold;
-  font-size: 35px;
+  font-size: 28px;
   color: rgb(226, 222, 0);
   text-shadow: 5px 5px 4px rgb(34, 3, 53);
   margin-right: 20px; 
   margin-top: -40%;
-}
-
-.phone-number {
-  color: #ff0000; /* Define a cor desejada para os números de telefone */
 }
 
 /* footer-two */

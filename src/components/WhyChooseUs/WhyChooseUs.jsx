@@ -156,6 +156,7 @@ const WhyChooseUs = () => {
         <div className="row justify-content-center">
           <div className="col-xl-6">
             <div className="section-title text-center mb-50">
+              <br />
               <span className="sub-title">Por que nos escolher? </span>
               <h2 className="title">
                 Por que somos os melhores para o seu <span>negócio?</span>

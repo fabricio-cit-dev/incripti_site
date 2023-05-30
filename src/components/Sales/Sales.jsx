@@ -9,7 +9,7 @@ import cl from "../../assets/img/projects/mockup tela sem fundo.png";
 
 const Sales = () => {
   return (
-    <section id="sales" className="chart-area chart-bg ">
+    <section id="portfolio" className="chart-area chart-bg ">
       <div className="container">
         <div className="row align-items-center justify-content-center">
           <div className="col-lg-6">

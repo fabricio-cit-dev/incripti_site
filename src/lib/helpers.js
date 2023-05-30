@@ -1,8 +1,8 @@
 export const scrollToTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
+  const bannerElement = document.getElementById("banner");
+  if (bannerElement) {
+    bannerElement.scrollIntoView({ behavior: "smooth" });
+  }
 };
 
 export const handleClickScroll = (id) => {

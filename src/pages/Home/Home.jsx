@@ -1,3 +1,5 @@
+// Home.js
+
 import React from "react";
 import Banner from "../../components/Banner/Banner";
 import ContactOne from "../../components/Contact/ContactOne";
@@ -8,25 +10,21 @@ import TopPartners from "../../components/TopPartners/TopPartners";
 import WhoWeAre from "../../components/WhoWeAre/WhoWeAre";
 import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
 import LayoutOne from "../../layouts/LayoutOne";
-import Faq from "../../components/Faq/Faq";
-import CountDownOne from "../../components/CountDown/CountDownOne";
 
 const Home = () => {
   return (
     <LayoutOne>
-      <main className="fix">
-        <Banner />
-        <br/>
-        <TopPartners />
+      <main className="home">
+        <Banner />       
         <WhoWeAre />
-        <br/>        
-        <br/>        
-        <br/>        
+        <TopPartners />        
         <WhyChooseUs />
-        <Sales />
-        <TeamOne />
+        <Sales />        
         <div className="area-bg">
           <Roadmap />
+        </div>
+        <div className="team-wrapper">
+          <TeamOne />
         </div>
       </main>
     </LayoutOne>
