@@ -32,7 +32,7 @@ const Banner = (props) => {
                   Leia mais
                 </Link>
               </div>              
-            </div>            
+            </div>
           </div>
         </div>        
       </div>
