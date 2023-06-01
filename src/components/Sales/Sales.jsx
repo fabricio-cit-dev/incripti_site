@@ -1,7 +1,6 @@
 import React from "react";
 import SalesTabButton from "./SalesTabButton";
 import SalesTabContent from "./SalesTabContent";
-import { nextImage } from "./slider-projects";
 import aparty from "../../assets/img/projects/APARTY MOCKUP 2.png";
 import Ares from "../../assets/img/projects/ares mockup sem fundo.png";
 import ms from "../../assets/img/projects/mockup ms sem fundo.png";
@@ -45,7 +44,6 @@ const Sales = () => {
                 <label htmlFor="radio4" class="manual-btn"></label>
               </div>
             </div>
-            <script src={nextImage}></script>
           </div>
           <div className="texto-projetos">
             <tr>Alguns de nossos projetos</tr> <br />

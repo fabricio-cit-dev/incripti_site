@@ -1,55 +1,67 @@
 import React from "react";
-import img01 from "../../assets/img/team/team_img01.png";
-import img02 from "../../assets/img/team/team_img02.png";
-import img03 from "../../assets/img/team/team_img03.png";
-import img04 from "../../assets/img/team/team_img04.png";
-import img05 from "../../assets/img/team/team_img05.png";
-import img06 from "../../assets/img/team/team_img06.png";
-import img07 from "../../assets/img/team/team_img07.png";
-import img08 from "../../assets/img/team/team_img08.png";
+import img01 from "../../assets/img/team/Lucas G.png";
+import img02 from "../../assets/img/team/Brenda.png";
+import img03 from "../../assets/img/team/Lucas T.png";
+import img04 from "../../assets/img/team/Ísis ,.png";
+import img05 from "../../assets/img/team/Maurício .png";
+import img06 from "../../assets/img/team/Matheus.png";
+import img07 from "../../assets/img/team/Fabrício .png";
+import img08 from "../../assets/img/team/Kevison..png";
+import img09 from "../../assets/img/team/Douglas .png"
+import img10 from "../../assets/img/team/Luigi.png"
 import TeamOneItem from "./TeamOneItem";
 
 const TeamOne = () => {
   const team_members = [
     {
       src: img01,
-      name: "Cameron Williamson",
+      name: "Lucas Gasparone",
       designation: "Founder & CO",
-    },
-    {
-      src: img02,
-      name: "Eleanor Pena",
-      designation: "Head of Design",
     },
     {
       src: img03,
-      name: "Bessie Cooper",
-      designation: "Vp People",
+      name: "Lucas Tauan",
+      designation: "Commercial Executive",
+    },
+    {
+      src: img02,
+      name: "Brenda Miguins",
+      designation: "Designer and Social Media",
     },
     {
       src: img04,
-      name: "Darlene Robertson",
-      designation: "Product Manager",
+      name: "Ísis Silva",
+      designation: "Fullstack Developer",
     },
     {
       src: img05,
-      name: "Jacob Jones",
-      designation: "Marketer",
+      name: "Maurício Azevedo",
+      designation: "Fullstack Developer",
     },
     {
       src: img06,
-      name: "Courtney Henry",
-      designation: "Founder",
+      name: "Mateus Pequeno",
+      designation: "Fullstack Developer",
     },
     {
       src: img07,
-      name: "Ronald Richards",
-      designation: "Account Manager",
+      name: "Fabrício Hiury",
+      designation: "Fullstack Developer",
     },
     {
       src: img08,
-      name: "Theresa Webb",
-      designation: "Founder & CO",
+      name: "Kevison Filipe",
+      designation: "Fullstack Developer",
+    },
+    {
+      src: img09,
+      name: "Douglas Santos",
+      designation: "UI / UX",
+    },
+    {
+      src: img10,
+      name: "Luigi Vila",
+      designation: "UI / UX",
     },
   ];
 
@@ -69,7 +81,7 @@ const TeamOne = () => {
 
         <div className="row justify-content-center">
           {team_members.map((member, index) => (
-            <div key={index} className="col-xl-3 col-md-4 col-sm-6">
+            <div key={index} className="col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6">
               <TeamOneItem item={member} />
             </div>
           ))}

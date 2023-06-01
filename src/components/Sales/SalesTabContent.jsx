@@ -19,7 +19,7 @@ const SalesTabContent = (props) => {
       <div className="chart-content-inner">
         <h2 className="title">{props.title}</h2>
         <p>{props.description}</p>
-        <Link to="/#footer" onClick={() => handleScrollToSection("footer")}className="btn">
+        <Link to="https://wa.me/+5561983463082" className="btn">
           Faça seu projeto conosco
         </Link>
       </div>

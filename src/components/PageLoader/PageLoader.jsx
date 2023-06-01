@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import cn from "classnames";
 import styles from "./PageLoader.module.css";
+import loadingimage from "../../assets/img/logo/logo-redimensionada.png"
 
 const PageLoader = () => {
   const [loading, setLoading] = useState(true);
@@ -18,11 +19,7 @@ const PageLoader = () => {
     return (
       <div className={cn(styles.preloader)}>
         <div className={cn(styles.spinner)}>
-          <div className={cn(styles.rect1)}></div>
-          <div className={cn(styles.rect2)}></div>
-          <div className={cn(styles.rect3)}></div>
-          <div className={cn(styles.rect4)}></div>
-          <div className={cn(styles.rect5)}></div>
+        <img className={cn(styles.loadingimage)} src={loadingimage} alt="Loading" />
         </div>
       </div>
     );

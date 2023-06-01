@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import SlickSlider from "../SlickSlider/SlickSlider";
-import icon01 from "../../assets/img/icon/choose_icon01.svg";
-import icon02 from "../../assets/img/icon/choose_icon02.svg";
-import icon03 from "../../assets/img/icon/choose_icon03.svg";
-import icon04 from "../../assets/img/icon/choose_icon04.svg";
-import icon05 from "../../assets/img/icon/choose_icon05.svg";
+import icon01 from "../../assets/img/icon/Icon 03 TEAM.png";
+import icon02 from "../../assets/img/icon/Icon UI-UX.png";
+import icon03 from "../../assets/img/icon/Untitled-33 05 Digital transformation.png";
+import icon04 from "../../assets/img/icon/Icon 01 SOFTWARE.png";
+import icon05 from "../../assets/img/icon/Icon 02 ERP.png";
 import WhyChooseUsItem from "./WhyChooseUsItem";
 import CountDownOne from "../CountDown/CountDownOne";
 
@@ -58,83 +58,107 @@ const WhyChooseUs = () => {
       alt: "",
       link: "/",
       title: "Team Allocation",
-      description: `Contamos com uma equipe especializada e altamente 
-      capacitada para alocar os melhores profissionais de desenvolvimento em seus projetos. Trabalhamos em conjunto para alcançar 
-      resultados excepcionais.`,
+      description: `Impulsione seus projetos com equipes altamente qualificadas. Nossa alocação
+      estratégica garante que você tenha os especialistas certos para atender às
+      demandas do seu projeto. Aumente a eficiência e acelere o sucesso com talentos
+      sob medida."`,
     },
     {
       src: icon02,
       alt: "",
       link: "/",
       title: "UI / UX",
-      description: `Acreditamos na importância de uma experiência de usuário incrível. Nossa equipe de design 
-      cria interfaces intuitivas e visualmente atraentes, garantindo que seus usuários se encantem com seu software.`,
+      description: `Encante seus clientes com designs envolventes e experiências do usuário
+      intuitivas. Nossa abordagem centrada no usuário combina pesquisa, análise e
+      criatividade para criar interfaces atraentes e funcionais. Destaque-se no mercado
+      com soluções de UI/UX de alta qualidade.`,
     },
     {
       src: icon03,
       alt: "",
       link: "/",
       title: "Digital Transformation",
-      description: `Ajudamos sua empresa a se adaptar e prosperar na era digital. 
-      Através de soluções inovadoras, transformamos processos tradicionais em experiências digitais eficientes e modernas.`,
+      description: `Prepare-se para o futuro digital e conquiste uma vantagem competitiva. Nossa
+      abordagem de transformação digital combina estratégia, tecnologia e mudança
+      organizacional. Trabalhamos em parceria com você para identificar oportunidades,
+      implementar soluções inovadoras e impulsionar a transformação em toda a sua
+      organização.`,
     },
     {
       src: icon04,
       alt: "",
       link: "/",
-      title: "Software",
-      description: `Desenvolvemos software personalizado que atende às 
-      necessidades exclusivas do seu negócio. Do planejamento à implementação, criamos soluções de software poderosas e escaláveis.`,
+      title: "Desenvolvimento de Software",
+      description: `Crie soluções de software personalizadas que atendam às suas necessidades
+      exclusivas. Nossa equipe de desenvolvedores altamente qualificados segue um
+      processo ágil, desde a análise de requisitos até o desenvolvimento e entrega do
+      software. Transforme sua visão em realidade com soluções de software sob
+      medida.`,
     },                  
     {
       src: icon05,
       alt: "",
       link: "/",
       title: "ERP",
-      description: `Simplifique sua gestão empresarial com nosso sistema integrado de recursos. 
-      Nosso ERP oferece uma visão abrangente e centralizada de suas operações, impulsionando a eficiência e o crescimento.`,
-    },                
+      description: `Obtenha o máximo do seu sistema ERP TOTVS Protheus com nossa consultoria
+      especializada. Nossos consultores experientes em Protheus realizam análises
+      detalhadas, identificam oportunidades de otimização e implementam soluções
+      personalizadas. Alcance a eficiência operacional e o sucesso com nossa expertise
+      em Protheus.`,
+    },                  
     {
       src: icon01,
       alt: "",
       link: "/",
       title: "Team Allocation",
-      description: `Contamos com uma equipe especializada e altamente 
-      capacitada para alocar os melhores profissionais de desenvolvimento em seus projetos. Trabalhamos em conjunto para alcançar 
-      resultados excepcionais.`,
+      description: `Impulsione seus projetos com equipes altamente qualificadas. Nossa alocação
+      estratégica garante que você tenha os especialistas certos para atender às
+      demandas do seu projeto. Aumente a eficiência e acelere o sucesso com talentos
+      sob medida."`,
     },
     {
       src: icon02,
       alt: "",
       link: "/",
       title: "UI / UX",
-      description: `Acreditamos na importância de uma experiência de usuário incrível. Nossa equipe de design 
-      cria interfaces intuitivas e visualmente atraentes, garantindo que seus usuários se encantem com seu software.`,
+      description: `Encante seus clientes com designs envolventes e experiências do usuário
+      intuitivas. Nossa abordagem centrada no usuário combina pesquisa, análise e
+      criatividade para criar interfaces atraentes e funcionais. Destaque-se no mercado
+      com soluções de UI/UX de alta qualidade.`,
     },
     {
       src: icon03,
       alt: "",
       link: "/",
       title: "Digital Transformation",
-      description: `Ajudamos sua empresa a se adaptar e prosperar na era digital. 
-      Através de soluções inovadoras, transformamos processos tradicionais em experiências digitais eficientes e modernas.`,
+      description: `Prepare-se para o futuro digital e conquiste uma vantagem competitiva. Nossa
+      abordagem de transformação digital combina estratégia, tecnologia e mudança
+      organizacional. Trabalhamos em parceria com você para identificar oportunidades,
+      implementar soluções inovadoras e impulsionar a transformação em toda a sua
+      organização.`,
     },
     {
       src: icon04,
       alt: "",
       link: "/",
-      title: "Software",
-      description: `Desenvolvemos software personalizado que atende às 
-      necessidades exclusivas do seu negócio. Do planejamento à implementação, criamos soluções de software poderosas e escaláveis.`,
+      title: "Desenvolvimento de Software",
+      description: `Crie soluções de software personalizadas que atendam às suas necessidades
+      exclusivas. Nossa equipe de desenvolvedores altamente qualificados segue um
+      processo ágil, desde a análise de requisitos até o desenvolvimento e entrega do
+      software. Transforme sua visão em realidade com soluções de software sob
+      medida.`,
     },                  
     {
       src: icon05,
       alt: "",
       link: "/",
       title: "ERP",
-      description: `Simplifique sua gestão empresarial com nosso sistema integrado de recursos. 
-      Nosso ERP oferece uma visão abrangente e centralizada de suas operações, impulsionando a eficiência e o crescimento.`,
-    },               
+      description: `Obtenha o máximo do seu sistema ERP TOTVS Protheus com nossa consultoria
+      especializada. Nossos consultores experientes em Protheus realizam análises
+      detalhadas, identificam oportunidades de otimização e implementam soluções
+      personalizadas. Alcance a eficiência operacional e o sucesso com nossa expertise
+      em Protheus.`,
+    },                  
   ];
 
   const initalState = 0;
@@ -175,7 +199,7 @@ const WhyChooseUs = () => {
           </SlickSlider>
         </div>
 
-        <div className="slide-progressbar">
+        {/*<div className="slide-progressbar">
           <div
             style={{
               // width: `${count * toMultiply}%`,
@@ -183,7 +207,7 @@ const WhyChooseUs = () => {
             }}
             className="slide-filler"
           />
-        </div>
+          </div> */}
         {/* <div
           className="slide-progress"
           role="progressbar"

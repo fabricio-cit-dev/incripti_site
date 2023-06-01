@@ -67,6 +67,7 @@ body {
 .home > * {
   scroll-snap-align: start;
   scroll-behavior: smooth;
+  scroll-snap-stop: always;
 }
 body.white-background,
 .white-background 
@@ -1500,10 +1501,13 @@ label {
 .about-area-pt-130-pb-130 {
   height: 90vh;
   margin: 0;
-  padding: 0;  
+  padding: 0;
+  background-image: linear-gradient(75deg, #1d014b, #31106e, #341670, #3e0f6a, #460564); 
 }
 .about-img {
   position: relative;
+  width: 70vh;
+  height: auto;
   padding-left: 20px;
 }
 .about-img img.img-two {
@@ -1554,6 +1558,10 @@ label {
   width: 73%;
   color: #a4b4c3;
 }
+.partner-area {
+  height: 90vh;
+  background-image: linear-gradient(75deg, #1d014b, #31106e, #341670, #3e0f6a, #460564);
+}
 .partner-wrap {
   height: 90vh;
   width: 100%;
@@ -1569,7 +1577,6 @@ label {
 .partner-wrap ul li {
   width: 20%;
   height: 123px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1586,6 +1593,54 @@ label {
 }
 .partner-wrap ul li:hover img {
   opacity: 1;
+}
+.testimonial-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(226, 222, 0);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.review-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  height: 50vh; 
+  width: 80%;
+  margin-left: -10px;
+  border-radius: 10px;
+}
+
+.review {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: 30%;
+  width: 100%; 
+}
+
+.review.active {
+  display: flex;
+}
+
+.client-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.client-title {
+  color: rgb(226, 222, 0);
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.client-review {
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.2;
 }
 
 /* about-two */
@@ -1676,6 +1731,7 @@ label {
   height: 90vh;
   margin: 0;
   padding: 0;
+  background-image: linear-gradient(75deg, #1d014b, #31106e, #341670, #3e0f6a, #460564);
 }
 .choose-area .row {
   margin: 0 -10px;
@@ -1684,7 +1740,7 @@ label {
   padding: 0 10px;
 }
 .choose-item {
-  min-height: 382px;
+  height: 58vh;
   background-image: linear-gradient(25deg, #2302ba, #7333d1, #ab5de7, #e087fe);
   border: 1px solid #31044d;
   border-radius: 15px;
@@ -1695,8 +1751,8 @@ label {
   border-color: transparent;
 }
 .choose-icon {
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1720,7 +1776,7 @@ label {
   margin-bottom: 0px;
   font-size: 15px;
   line-height: 22px;
-  color: #a4b4c3;
+  color: #fff;
   text-align: left;
 }
 .choose-area .sr-only {
@@ -1762,7 +1818,6 @@ label {
   background-image: linear-gradient(45deg, #7727e5, #b36bb3, #d1a77b, #e0e21b);
   background-size: cover;
   background-position: center;
-  padding: 130px 0 218px;
   position: relative;
 }
 .choose-bg::before {
@@ -1815,7 +1870,7 @@ label {
   display: flex;
 }
 .chart-bg {
-  background: #31044d;
+  background-color: #f8f8ff;
   background-size: cover;
   background-position: center;
   padding: 0;
@@ -1911,17 +1966,17 @@ label {
   color: rgb(226, 222, 0);
   font-size: 46px;
   font-weight: bold;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: "Outfit", sans-serif;
   text-shadow: .5px .5px .25px rgb(34, 3, 53);
-  line-height: 1.2;
+  line-height: 1.1;
 }
 .texto-projetos td {
   text-align: center;
-  color: #fff;
+  color: #333333;
   font-size: 30px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: "Outfit", sans-serif;
   text-align: justify;
-  line-height: 1.5;
+  line-height: 1.2;
 }
 .slider {
   float: right; 
@@ -1969,7 +2024,7 @@ label {
 }
 
 .manual-btn {
-  border: 2px solid #fff;
+  border: 4px solid rgb(243, 239, 1);
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
@@ -1981,7 +2036,8 @@ label {
 }
 
 .manual-btn:hover {
-  background-color: rgb(243, 239, 1);
+  border-color: #512fa7;
+  background-color: #512fa7;
 }
 
 #radio1:checked ~ .first{
@@ -2213,7 +2269,7 @@ label {
   opacity: 0.1;
 }
 .roadmap-item {
-  width: 345px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   flex: 0 0 345px;
@@ -2515,12 +2571,11 @@ label {
 
 /* 13. Team */
 .team-wrapper {
-  height: 100%;
-  scroll-snap-type: y mandatory;
+  height: 103%;
   overflow-y: scroll;
 }
 .team-area {
-  height: 100%;
+  height: 120%;
   width: 100%;
   position: relative;
 }
@@ -2541,23 +2596,23 @@ label {
 }
 .team-item .team-thumb {
   position: relative;
+  width: 197px;
+  height: 197px;
   border-radius: 50%;
-  padding: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   display: inline-block;
 }
 .team-item .team-thumb::before {
   content: "";
-  left: 0;
-  top: 0;
-  width: 226px;
-  height: 226px;
+  width: 190px;
+  height: 190px;
   background: transparent;
   border: 2px dashed rgb(243, 239, 1);
   border-radius: 50%;
   position: absolute;
+  transform: translate(-50%, -50%);
   transition: all 0.3s ease-in-out;
-  animation: rotateme 0.4s linear infinite;
+  animation: rotateme 15s linear infinite;
   opacity: 0;
 }
 .team-item:hover .team-thumb::before {
@@ -3523,7 +3578,7 @@ select:focus {
 
 /* 20. Footer */
 .footer-area {
-  height: 64vh;
+  height: 70vh;
   position: relative;
   z-index: 1;
 }
@@ -3582,19 +3637,20 @@ select:focus {
   margin-bottom: 30px;
 }
 .footer-widget .f-logo {
-  margin-bottom: 10px;
+  margin-left: -5%;
   height: auto;
+  width: 30vh;
   display: block;
 }
 .footer-titulo {
-  font-size: 25px;
-  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 28px;
+  font-family: "Outfit", sans-serif;;
   color: rgb(226, 222, 0);
 }
 .footer-content p {
-  font-family: 'Trebuchet MS', sans-serif;
-  margin-bottom: 25px;
-  font-size: 15px;
+  font-family: "Outfit", sans-serif;
+  margin-bottom: 20px;
+  font-size: 18px;
   line-height: 26px;
   color: #a4b4c3;
 }
@@ -3700,13 +3756,13 @@ select:focus {
   color: #fff;
 }
 .footer-contacts {
-  font-family: 'Trebuchet MS', sans-serif;
+  font-family: "Outfit", sans-serif;;
   float: right;
   margin-right: 30px;
 }
 
 .footer-contacts span {
-  font-family: 'Trebuchet MS', sans-serif;
+  font-family: "Outfit", sans-serif;;
   font-size: 20px;
   color: rgb(243, 239, 1);
   text-shadow: 5px 5px 4px rgb(34, 3, 53);
@@ -3729,6 +3785,10 @@ select:focus {
   text-shadow: 5px 5px 4px rgb(34, 3, 53);
   margin-right: 20px; 
   margin-top: -40%;
+}
+.locali-icon {
+  width: 30px;
+  height: 30px;
 }
 
 /* footer-two */

@@ -1,4 +1,12 @@
 /* 21. Preloader */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .preloader {
   position: fixed;
   display: flex;
@@ -9,36 +17,16 @@
   width: 100%;
   height: 100%;
 }
-.spinner {
-  margin: 100px auto;
-  width: 50px;
-  height: 40px;
-  text-align: center;
-  font-size: 10px;
-}
-.spinner > div {
-  background-color: #4a81e5;
-  height: 100%;
-  width: 6px;
-  display: inline-block;
-  -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
-  animation: sk-stretchdelay 1.2s infinite ease-in-out;
-}
-.spinner .rect2 {
-  -webkit-animation-delay: -1.1s;
-  animation-delay: -1.1s;
-}
-.spinner .rect3 {
-  -webkit-animation-delay: -1s;
-  animation-delay: -1s;
-}
-.spinner .rect4 {
-  -webkit-animation-delay: -0.9s;
-  animation-delay: -0.9s;
-}
-.spinner .rect5 {
-  -webkit-animation-delay: -0.8s;
-  animation-delay: -0.8s;
+.loadingimage {
+  align-items: center;
+  justify-content: center;  
+  height: 50%;
+  width: 50%;
+  margin-left: 20%;
+  animation-name: rotate;
+  animation-duration: 4s; 
+  animation-iteration-count: infinite; 
+  animation-timing-function: linear; 
 }
 @-webkit-keyframes sk-stretchdelay {
   0%,

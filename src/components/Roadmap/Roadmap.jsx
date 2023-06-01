@@ -5,69 +5,67 @@ import RoadmapItem from "./RoadmapItem";
 const Roadmap = () => {
   const roadmap_items = [
     {
-      roadmapTitle: "Mid of Q4 2021",
-      title: "Concept",
+      roadmapTitle: "Step 1",
+      title: "Pesquisa e Desenvolvimento",
       info: [
-        "EVM support for parthians",
-        "SubQuery Academy",
-        "Proof of indexing",
+        "Investimos em inovação, explorando tecnologias e metodologias para",
+        " oferecer soluções de software ",
+        "de ponta.",
       ],
     },
     {
-      roadmapTitle: "Mid of Q4 2021",
-      title: "Research",
+      roadmapTitle: "Step 2",
+      title: "Design de Software",
       info: [
-        "SubQuery Builders/Grants Program",
-        "SQT Network contract internal MVP",
-        "Coordinator and client SDK",
-      ],
-    },
-
-    {
-      roadmapTitle: "Mid of Q4 2021",
-      title: "App beta test",
-      info: [
-        "Public testnet launch",
-        "SubQuery Network Explorer and dApp",
-        "Point-in-time indexing",
+        "Criamos uma arquitetura sólida e uma interface intuitiva para proporcionar",
+        "uma experiência excepcional aos usuários.",
       ],
     },
 
     {
-      roadmapTitle: "Mid of Q4 2021",
-      title: "Token Test",
+      roadmapTitle: "Step 3",
+      title: "Desenvolvimento do Software",
       info: [
-        "SQT token generation event",
-        "Public incentivize testnet launch",
-        "Data traffic insights and reporting",
+        "Transformamos o design em código de alta qualidade, implementando as",
+        "funcionalidades e recursos do software.",
+      ],
+    },
+
+    {
+      roadmapTitle: "Step 4",
+      title: "Testes",
+      info: [
+        "Realizamos testes rigorosos para garantir", 
+        "que o software atenda aos requisitos e", 
+        "funcione corretamente em diferentes cenários.",
       ],
     },
     {
-      roadmapTitle: "Mid of Q4 2021",
-      title: "Alpha Test",
+      roadmapTitle: "Step 5",
+      title: "Aprovação do Cliente",
       info: [
-        "Launch of the SubQuery Foundation",
-        "Finalise research for other Layer-1 chains",
-        "Liquidity mining program",
+        "Apresentamos o software para sua revisão e validação, ajustando-o ", 
+        "conforme suas necessidades e feedback.",
       ],
     },
     {
-      roadmapTitle: "Mid of Q4 2021",
-      title: "Benefits",
+      roadmapTitle: "Step 6",
+      title: "Implantação",
       info: [
-        "Mainnet launch",
-        "Centralized exchange launch",
-        "Public incentivize testnet",
+        "Configuramos e implementamos o software em seu ambiente de ", 
+        "produção, garantindo uma transição", 
+        "suave e eficiente.",
       ],
     },
     {
-      roadmapTitle: "Mid of Q4 2021",
-      title: "Operational",
+      roadmapTitle: "Step 7",
+      title: "Suporte e Manutenção",
       info: [
         <>
-          SubQuery launches its <br /> own parthian
+          Fornecemos assistência técnica e manutenção contínua
+          para garantir que o software continue operando de maneira 
+          adequada e atualizada.  
         </>,
-        "SubQuery Foundation",
       ],
     },
   ];
@@ -80,8 +78,6 @@ const Roadmap = () => {
         <div className="row justify-content-center">
           <div className="col-xl-5 col-lg-8">
             <div className="section-title text-center mb-60">
-              <br/>
-              <br/>
               <span className="sub-title">Nosso Processo de Desenvolvimento</span>
               <h2 className="title">
               Construindo Soluções de Software com <span>Excelência</span>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logoImage from "../../../src/assets/img/logo/incript-logo.png";
+import logoImage from "../../../src/assets/img/logo/Incript 06 Artboard 6.png";
 import { scrollToTop } from "../../lib/helpers";
 import FooterContact from "./FooterContacts";
 
@@ -28,8 +28,7 @@ const FooterOne = () => {
             <div className="row">
               <div className="col-xl-3 col-lg-4 col-md-6">
                 <div
-                  className="footer-widget wow fadeInUp"
-                  data-wow-delay=".2s"
+                  className="footer-widget"
                 >
                   <Link to="/" className="f-logo">
                     <img src={logoImage} alt="Incript Logo" />
@@ -37,16 +36,16 @@ const FooterOne = () => {
                   <div className="footer-content">
                     <p>
                       <span className="footer-titulo">Software's House</span><br/>
-                      Construindo a tecnologia de amanhã, hoje!
+                      Dream can be a ideas,<br/> ideas can be a business.
                     </p>
                     <ul className="footer-social">
                       <li>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/company/incript/">
                           <i className="fab fa-linkedin"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="https://www.instagram.com/incriptime/">
                           <i className="fab fa-instagram"></i>
                         </a>
                       </li>                     
@@ -56,8 +55,7 @@ const FooterOne = () => {
               </div>
               <div className="footer-contacts">
                 <div
-                  className="footer-widget  wow fadeInUp"
-                  data-wow-delay=".4s"
+                  className="footer-widget"
                 >
                   <FooterContact />                         
                 </div>

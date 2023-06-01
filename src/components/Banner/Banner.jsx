@@ -21,7 +21,7 @@ const Banner = (props) => {
               Nossa especialidade é <br/>transformar o <br/>seu <span>Negócio</span> 
               </h2>
               <div className="banner-button">
-                <Link to="/#footer" onClick={() => handleScrollToSection("footer")}className="btn">
+                <Link to="https://wa.me/+5561983463082" className="btn">
                   Faça seu projeto conosco
                 </Link>
               </div>

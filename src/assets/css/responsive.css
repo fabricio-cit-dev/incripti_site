@@ -236,6 +236,16 @@
   .footer-menu ul {
     margin: 0 -20px;
   }
+  .footer-area {
+    height: 100vh;
+  }
+  .footer-widget {
+    margin-top: -15%;
+    margin-bottom: 60%;
+  }
+  .footer-contacts {
+    margin-bottom: -10%;
+  }
   .header-lang .lang-list {
     left: auto;
     right: 0;
@@ -725,7 +735,7 @@
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (max-width: 1000px) {
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
   .banner-bg {
     height: 100%;
   }
@@ -758,6 +768,9 @@
   .banner-progress-wrap ul {
     margin: 0 0;
   }
+  .about-img {
+    right: 10%;
+  }
   .about-img img.img-two {
     display: none;
   }
@@ -783,6 +796,26 @@
   .chart-wrap ul li {
     width: 100%;
   }
+  .chart-area {
+    height: 150%;
+    width: 235%;
+  }
+  .slider {
+    float: none;
+    margin-left: -75%;
+  }
+  .slides {
+    margin-top: -5%;
+  }
+  .manual-navigation {
+    left: 25%;
+  }
+  .texto-projetos {
+    margin-left: -50%;
+  }
+  .team-area {
+    height: 120%;
+  }
   .section-title .title br {
     display: none;
   }
@@ -799,6 +832,14 @@
     margin: 0 -15px;
     flex-wrap: wrap;
   }
+  .footer-area {
+    height: 95vh;
+  }
+  .footer-contacts {
+    margin-top: 20%;
+    margin-bottom: -20%;
+  }
+
   .banner-social-wrap {
     display: none;
   }
@@ -1078,6 +1119,16 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media only screen and (min-width: 350px) and (max-width: 767px) {
+  .banner-area {
+    height: 90vh;
+  }
+  .banner-button {
+    margin-top: 5%;
+    margin-left: 10%;
+  }
+  .banner-line .line {
+    height: 50px;
+  } 
   .banner-content .title{
     margin-left: 5%;  
   }
@@ -1097,6 +1148,19 @@
     width: 70vw;
     margin-bottom: 10px;
   }
+  .about-area.pt-130.pb-130 {
+    height: 95vh;
+  }
+  .about-img {
+    width: 40vh;
+    left: 3%;
+    height: auto;
+    margin-bottom: -20px;
+  }
+  .choose-item {
+    height: 55vh;
+    margin-bottom: -20px;
+  }
   .container,
   .custom-container {
     max-width: 540px;
@@ -1111,11 +1175,35 @@
   .choose-content .title br {
     display: none;
   }
+  .chart-area {
+    width: 100vh;
+  }
+  .texto-projetos td {
+    text-align: left;
+  }
+  .texto-projetos {
+    height: 30vh;
+    margin-right: -60%;
+    margin-left: -10%;
+  }
   .chart-wrap {
     padding: 50px 40px 50px;
   }
   .chart-wrap ul li {
     width: 50%;
+  }
+  .chart-area {
+    height: 180%;
+  }
+  .slider {
+    margin-left: -40%;
+    float: none;
+  }
+  .slides {
+    margin-top: 5%;
+  }
+  .manual-navigation {
+    left: 30%;
   }
   .contact-form-wrap {
     padding: 45px 35px;
@@ -1128,6 +1216,21 @@
   }
   .contact-list-item {
     padding: 22px 30px;
+  }
+  .roadmap-area {
+    height: 180%;
+  }
+  .bt-roadmap-wrap {
+    height: 100%;
+  }
+  .team-area {
+    height: 255%;
+  }
+  .footer-area {
+    height: 120vh;
+  }
+  .footer-bottom {
+    margin-top: 35%;
   }
   .blog-post-content > .title {
     font-size: 28px;
