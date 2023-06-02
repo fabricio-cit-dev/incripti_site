@@ -72,7 +72,10 @@ const HeaderOne = () => {
               <div className="menu-wrap">
                 <nav className={"menu-nav"}>
                   <div className="logo">
-                    <Link to={"#banner"}>
+                    <Link
+                      className={"section-link"}
+                      onClick={() => handleClickScroll("banner")}
+                    >
                       <img src={logoImage} alt="Incript Logo" />
                     </Link>
                   </div>
@@ -86,7 +89,6 @@ const HeaderOne = () => {
                         )}
                       >
                         <Link
-                          to="#banner"
                           className={"section-link"}
                           onClick={() => handleClickScroll("banner")}
                         >
@@ -95,34 +97,30 @@ const HeaderOne = () => {
                       </li>
                       <li className={cn(hash === "#about" && "active")}>
                         <Link
-                          to="#about"
                           className={"section-link"}
                           onClick={() => handleClickScroll("about")}
                         >
                           Sobre nós
                         </Link>
                       </li>
-                      <li className={isActiveLink("#roadmap")}>
-                        <Link
-                          to="#roadmap"
-                          className={"section-link"}
-                          onClick={() => handleClickScroll("roadmap")}
-                        >
-                          Como fazemos
-                        </Link>
-                      </li>
                       <li className={isActiveLink("#portfolio")}>
                         <Link
-                          to="#portfolio"
                           className={"section-link"}
                           onClick={() => handleClickScroll("portfolio")}
                         >
                           Portfólio
                         </Link>
                       </li>
+                      <li className={isActiveLink("#roadmap")}>
+                        <Link
+                          className={"section-link"}
+                          onClick={() => handleClickScroll("roadmap")}
+                        >
+                          Como fazemos
+                        </Link>
+                      </li>                      
                       <li className={isActiveLink("#footer")}>
                         <Link
-                          to="#footer"
                           className={"section-link"}
                           onClick={() => handleClickScroll("footer")}
                         >

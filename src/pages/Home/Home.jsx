@@ -3,11 +3,9 @@
 import React, { useState, useEffect } from "react";
 import { useCookies } from "react-cookie";
 import Banner from "../../components/Banner/Banner";
-import ContactOne from "../../components/Contact/ContactOne";
 import Roadmap from "../../components/Roadmap/Roadmap";
 import Sales from "../../components/Sales/Sales";
 import TeamOne from "../../components/Team/TeamOne";
-import TopPartners from "../../components/TopPartners/TopPartners";
 import WhoWeAre from "../../components/WhoWeAre/WhoWeAre";
 import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
 import LayoutOne from "../../layouts/LayoutOne";
@@ -16,11 +14,17 @@ import styles from "./styles";
 
 const CookieBanner = () => {
   const [showBanner, setShowBanner] = useState(true);
-  const [cookies, setCookie] = useCookies(["cookie_consent"]);
+  const [cookies, setCookies] = useCookies(["cookie_consent"]);
   const [openBanner, setOpenBanner] = useState(true);
+
+  const preferenciasSalvas = useCookies(["cookie_consent"]);
 
   useEffect(() => {
     const hasConsented = cookies.cookie_consent;
+    
+    const preferenciasDeExibicao = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    );
 
     if (hasConsented) {
       setShowBanner(false);
@@ -28,12 +32,14 @@ const CookieBanner = () => {
   }, [cookies]);
 
   const handleConsent = () => {
-    setCookie("cookie_consent", true, { path: "/" });
+    setCookies("cookie_consent", true, { path: "/" });
+    
+    localStorage.setItem('user_language',navigator.language)
     setShowBanner(false);
   };
 
   const handleDecline = () => {
-    setCookie("cookie_consent", false, { path: "/" });
+    setCookies("cookie_consent", false, { path: "/" });
     setShowBanner(false);
   };
 

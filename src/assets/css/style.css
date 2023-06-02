@@ -476,8 +476,12 @@ label {
   max-width: 1200px;
 }
 
+.sticky-header .menu-area {
+  position: absolute;
+}
+
 .transparent-header {
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   width: 100%;
@@ -3147,7 +3151,7 @@ label {
 /* 13. Team */
 .team-wrapper {
   height: 103%;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .team-area {
