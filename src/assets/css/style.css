@@ -784,6 +784,9 @@ label {
   width: 100%;
   z-index: 99;
   background: #50097c;
+  -webkit-animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
+  animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
+  -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
   box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
   border-radius: 0;
 }

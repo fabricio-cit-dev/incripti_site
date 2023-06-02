@@ -90,7 +90,7 @@ const HeaderOne = () => {
                       >
                         <Link
                           className={"section-link"}
-                          onClick={() => handleClickScroll("banner")}
+                          onClick={() => handleClickScroll("header")}
                         >
                           Home
                         </Link>

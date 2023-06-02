@@ -17,14 +17,8 @@ const CookieBanner = () => {
   const [cookies, setCookies] = useCookies(["cookie_consent"]);
   const [openBanner, setOpenBanner] = useState(true);
 
-  const preferenciasSalvas = useCookies(["cookie_consent"]);
-
   useEffect(() => {
     const hasConsented = cookies.cookie_consent;
-    
-    const preferenciasDeExibicao = window.matchMedia(
-      "(prefers-color-scheme: dark)"
-    );
 
     if (hasConsented) {
       setShowBanner(false);
