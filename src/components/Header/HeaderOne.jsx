@@ -34,11 +34,11 @@ const HeaderOne = () => {
       let mobileMenuContent = $(".menu-area .main-menu").html();
       $(".mobile-menu .menu-box .menu-outer").append(mobileMenuContent);
 
-    if ($(".mobile-menu .menu-box .menu-outer").is(":empty")) {
-      let mobileMenuContent = $(".menu-area .main-menu").html();
-      $(".mobile-menu .menu-box .menu-outer").append(mobileMenuContent);
-    }    
-      
+      if ($(".mobile-menu .menu-box .menu-outer").is(":empty")) {
+        let mobileMenuContent = $(".menu-area .main-menu").html();
+        $(".mobile-menu .menu-box .menu-outer").append(mobileMenuContent);
+      }
+
       //Menu Toggle Btn
       $(".mobile-nav-toggler").on("click", function () {
         $("body").addClass("mobile-menu-visible");
@@ -54,7 +54,7 @@ const HeaderOne = () => {
   // active link switching
   const { hash, pathname } = useLocation();
   const isActiveLink = (id) => {
-    return id == hash ? "active" : "";
+    return id === hash ? "active" : "";
   };
 
   return (
@@ -81,7 +81,7 @@ const HeaderOne = () => {
                     <ul className={"navigation"}>
                       <li
                         className={cn(
-                          hash == "" && "active",
+                          hash === "" && "active",
                           "menu-item-has-children"
                         )}
                       >
@@ -93,7 +93,7 @@ const HeaderOne = () => {
                           Home
                         </Link>
                       </li>
-                      <li className={cn(hash == "#about" && "active")}>
+                      <li className={cn(hash === "#about" && "active")}>
                         <Link
                           to="#about"
                           className={"section-link"}
@@ -101,7 +101,7 @@ const HeaderOne = () => {
                         >
                           Sobre nós
                         </Link>
-                      </li>                      
+                      </li>
                       <li className={isActiveLink("#roadmap")}>
                         <Link
                           to="#roadmap"
@@ -110,7 +110,7 @@ const HeaderOne = () => {
                         >
                           Como fazemos
                         </Link>
-                      </li>                      
+                      </li>
                       <li className={isActiveLink("#portfolio")}>
                         <Link
                           to="#portfolio"
@@ -129,7 +129,6 @@ const HeaderOne = () => {
                           Contato
                         </Link>
                       </li>
-                      
                     </ul>
                     <div className="social-navbar">
                       <ul className="clearfix">
@@ -146,20 +145,21 @@ const HeaderOne = () => {
                       </ul>
                     </div>
                     <div className={cn("header-action", "d-none d-md-block")}>
-                    <ul>
-                      <li className={"header-lang"}>
-                        <span className={"selected-lang"}>PT-BR</span>
-                        <ul className={"lang-list"}>
-                          <li>
-                            <Link to="#">EN-US</Link>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>                      
-                    </div>        
+                      <ul>
+                        <li className={"header-lang"}>
+                          <span className={"selected-lang"}>PT-BR</span>
+                          <ul className={"lang-list"}>
+                            <li>
+                              <Link to="#">EN-US</Link>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                  <div className={cn("header-action", "d-none d-md-block")}>                    
-                  </div>
+                  <div
+                    className={cn("header-action", "d-none d-md-block")}
+                  ></div>
                 </nav>
               </div>
 
@@ -170,14 +170,14 @@ const HeaderOne = () => {
                     <i className="fas fa-times"></i>
                   </div>
                   <div className={"nav-logo"}>
-                    <Link to="C:\incript-site\src\assets\img\logo\incript-logo.png">
+                    <Link to="#banner">
                       <img src={logoImage} alt="Incript Logo" title="" />
                     </Link>
                   </div>
 
                   <div className={"menu-outer"}>
                     {/* <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->  */}
-                  </div>                  
+                  </div>
                 </nav>
               </div>
 

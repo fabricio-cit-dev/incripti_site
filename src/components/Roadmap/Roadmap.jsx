@@ -90,7 +90,6 @@ const Roadmap = () => {
           <div className="col-lg-12">
             <div
               className="bt-roadmap_x bt-roadmap-scrollbar"
-              ref={scrollRef}
               style={{ overflow: "auto" }}
             >
               <div className="bt-roadmap-wrap">

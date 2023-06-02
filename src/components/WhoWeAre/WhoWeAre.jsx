@@ -1,5 +1,5 @@
 import React from "react";
-import img01 from "../../assets/img/images/Incript 06 Artboard 6.png";
+import img01 from "../../assets/img/images/Moldura.png";
 import { Link } from "react-router-dom";
 import ms from "../../assets/img/parceiros-redimensionadas/logo-ms.png";
 import weria from "../../assets/img/parceiros-redimensionadas/Weria PNG 05 Artboard 6 Copy 3.png";

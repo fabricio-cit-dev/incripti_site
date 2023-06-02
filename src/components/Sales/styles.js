@@ -1,3 +1,5 @@
+import { width } from "@mui/system";
+
 const styles = {
   header: {
     width: "100%",
@@ -9,7 +11,13 @@ const styles = {
   },
 
   containerImage: {
-    width: "50%",
+    width: "100%",
+  },
+
+  changingText: {
+    backgroundColor: "#e2de00",
+    color: "#e2de00",
+    fontWeight: "bold",
   },
 
   containerButtons: {
@@ -17,6 +25,7 @@ const styles = {
     height: 200,
     display: "flex",
     justifyContent: "center",
+    marginTop: "5%",
   },
 
   imageLeftSide: {
@@ -31,7 +40,7 @@ const styles = {
     height: 30,
     margin: 5,
   },
-  
+
   button: {
     border: "none",
     height: 50,
@@ -39,6 +48,16 @@ const styles = {
     alignItems: "center",
     display: "flex",
     backgroundColor: "transparent",
+  },
+  separator: {
+    height: 3,
+    width: "15%",
+    backgroundColor: "#e2de00",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    border: "none",
+    margin: "25px 0",
   },
 };
 

@@ -1,7 +1,5 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./styles";
-
 import IconNest from "../../assets/img/icon/play.png";
 import aparty from "../../assets/img/projects/APARTY MOCKUP 2.png";
 import Ares from "../../assets/img/projects/ares mockup sem fundo.png";
@@ -13,16 +11,30 @@ const Sales = () => {
     {
       id: 1,
       image: ms,
-      title: "Alguns de nossos projetos",
-      description:
-        "Estamos sempre à procura das melhores linguagens e frameworks afim de oferecer o que há de melhor no mercado.",
+      description: "Software",
+      changingText: "personalizado",
+      endtext: "para seu negócio",
     },
     {
       id: 2,
       image: cl,
-      title: "Alguns de nossos projetos",
-      description:
-        "Estamos sempre buscando o que há de melhor no mercado, para oferecer soluções inovadoras e de qualidade excepcional.",
+      description: "Software",
+      changingText: "sob medida",
+      endtext: "para seu negócio",
+    },
+    {
+      id: 3,
+      image: Ares,
+      description: "Software",
+      changingText: "exclusivo",
+      endtext: "para seu negócio",
+    },
+    {
+      id: 4,
+      image: aparty,
+      description: "Software",
+      changingText: "especializado",
+      endtext: "para seu negócio",
     },
   ];
 
@@ -37,18 +49,35 @@ const Sales = () => {
   const showNextItem = () => {
     if (currentItemIndex < portfolio.length - 1) {
       setCurrentItemIndex(currentItemIndex + 1);
+    } else {
+      setCurrentItemIndex(0); // Volta para o primeiro item
     }
   };
 
   const currentItem = portfolio[currentItemIndex];
 
-  console.log('CURRET', currentItem)
+  useEffect(() => {
+    const interval = setInterval(() => {
+      showNextItem();
+    }, 4000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, [currentItemIndex]);
+
   return (
     <section id="portfolio" className="chart-area chart-bg ">
-      <div style={styles.header}>
+      <div className="sub-title-div">
+        <span className="sub-title-about">Alguns de nossos projetos</span>
+      </div>
+      <div className="projetos" style={styles.header}>
         <div className="texto-projetos">
-          <tr>{currentItem.title}</tr>
-          <td>{currentItem.description}</td>
+          <td>
+            {currentItem.description} <tr> {currentItem.changingText} </tr>{" "}
+            <br />
+            {currentItem.endtext}
+          </td>
         </div>
 
         <div style={styles.containerImage}>
@@ -56,7 +85,7 @@ const Sales = () => {
             <img
               src={currentItem.image}
               alt="ms-project"
-              style={{ marginLeft: "30%" }}
+              style={{ marginLeft: "0" }}
             />
           </div>
         </div>
@@ -66,6 +95,7 @@ const Sales = () => {
         <button style={styles.button} onClick={showPreviousItem}>
           <img src={IconNest} alt="ms-project" style={styles.imageLeftSide} />
         </button>
+        <hr style={styles.separator} />
         <button style={styles.button} onClick={showNextItem}>
           <img src={IconNest} alt="ms-project" style={styles.imageRightSide} />
         </button>
