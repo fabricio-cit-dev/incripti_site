@@ -13,7 +13,7 @@ const LayoutOne = (props) => {
 
       {props.children}
 
-      <FooterOne />
+      {/* <FooterOne /> */}
     </div>
   );
 };

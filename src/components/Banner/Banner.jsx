@@ -1,5 +1,4 @@
 import React from "react";
-import CountDownOne from "../CountDown/CountDownOne";
 import { Link } from "react-router-dom";
 import logo from "../../assets/img/logo/logo-redimensionada.png"
 

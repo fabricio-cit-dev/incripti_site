@@ -11,6 +11,7 @@ import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
 import LayoutOne from "../../layouts/LayoutOne";
 import Cookie from "../../assets/img/logo/cookies.png";
 import styles from "./styles";
+import FooterOne from "../../components/Footer/FooterOne";
 
 const CookieBanner = () => {
   const [showBanner, setShowBanner] = useState(true);
@@ -98,6 +99,7 @@ const Home = () => {
         <div className="team-wrapper">
           <TeamOne />
         </div>
+        <FooterOne />
       </main>
     </LayoutOne>
   );

@@ -740,9 +740,6 @@
     width: 100%;
     height: auto;
   }
-  .banner-bg {
-    height: 90vh;
-  }
   .banner-content .title {
     margin-left: -5%;
   }
@@ -775,8 +772,15 @@
   .about-img {
     width: 55%;
     height: auto;
-    margin-bottom: -10px;
+    margin-top: -100px;
+    margin-bottom: 10px;
     margin-left: 20%;
+  }
+  .sub-title-about {
+    margin-top: -10px;
+  }
+  .section-title .sub-title {
+    margin-top: 0;
   }
   .slider-partners {
     margin-top: -50px;
@@ -807,10 +811,6 @@
     padding: 40px 30px 40px;
   }
   .chart-wrap ul li {
-    width: 100%;
-  }
-  .chart-area {
-    height: 90vh;
     width: 100%;
   }
   .projetos {
@@ -1120,8 +1120,8 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media only screen and (min-width: 350px) and (max-width: 767px) {
-  .banner-area {
-    height: 90vh;
+  .banner-content .title {
+    margin-top: 50%;
   }
   .banner-button {
     margin-top: 5%;
@@ -1150,15 +1150,18 @@
     margin-bottom: 10px;
   }
   .about-area.pt-130.pb-130 {
-    height: 90vh;
+    height: 100vh;
     width: 100%;
+  }
+  .sub-title-about {
+    margin-top: -15px;
   }
   .about-img {
     width: 20vh;
     margin-left: 90px;
-    margin-top: -20px;
+    margin-top: -80px;
     height: auto;
-    margin-bottom: -20px;
+    margin-bottom: -15px;
   }
   .about-content {
     margin-left: 2%;
@@ -1166,9 +1169,19 @@
   .partner-area-about {
     display: none;
   }
+  .section-title .sub-title {
+    margin-top: 60px;
+    font-size: 15px;
+  }
   .choose-item {
     height: 55vh;
     margin-bottom: -20px;
+  }
+  .chart-bg {
+    height: 100vh;
+  }
+  .team-wrapper {
+    height: 103%;
   }
   .container,
   .custom-container {
@@ -1184,9 +1197,6 @@
   .choose-content .title br {
     display: none;
   }
-  .chart-area {
-    width: 100vh;
-  }
   .texto-projetos td {
     text-align: left;
   }
@@ -1194,10 +1204,6 @@
     height: 30vh;
     margin-right: -60%;
     margin-left: -10%;
-  }
-  .chart-area {
-    height: 90vh;
-    width: 100%;
   }
   .projetos {
     display: flex;
