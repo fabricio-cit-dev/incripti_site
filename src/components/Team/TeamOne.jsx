@@ -2,12 +2,12 @@ import React from "react";
 import img01 from "../../assets/img/team/Lucas G.png";
 import img02 from "../../assets/img/team/Brenda.png";
 import img03 from "../../assets/img/team/Lucas T.png";
-import img04 from "../../assets/img/team/Ísis ,.png";
-import img05 from "../../assets/img/team/Maurício .png";
+import img04 from "../../assets/img/team/Isis.png";
+import img05 from "../../assets/img/team/Mauricio.png";
 import img06 from "../../assets/img/team/Matheus.png";
-import img07 from "../../assets/img/team/Fabrício .png";
+import img07 from "../../assets/img/team/Fabricio.png";
 import img08 from "../../assets/img/team/Kevison..png";
-import img09 from "../../assets/img/team/Douglas .png"
+import img09 from "../../assets/img/team/Douglas.png"
 import img10 from "../../assets/img/team/Luigi.png"
 import TeamOneItem from "./TeamOneItem";
 

@@ -736,6 +736,22 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 1000px) {
+  .html {
+    scroll-snap-type: none;
+    scroll-snap-align: none;
+    overflow: auto;
+    scroll-behavior: auto;
+  }
+  .home {
+    overflow-y: auto;
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+    scroll-snap-stop: normal;
+  }
+  html,
+  body {
+    scroll-behavior: auto;
+  }
   .nav-logo {
     width: 100%;
     height: auto;
@@ -788,6 +804,10 @@
   .about-img img.img-two {
     display: none;
   }
+  .team-wrapper {
+    height: 110%;
+    overflow-y: initial;
+  }
   .team-area {
     height: 100%;
   }
@@ -839,6 +859,9 @@
   .footer-contacts {
     margin-top: 20%;
     margin-bottom: -20%;
+  }
+  .footer-area {
+    height: 100%;
   }
 
   .banner-social-wrap {
@@ -1120,6 +1143,22 @@
 
 /* Small devices (landscape phones, 576px and up) */
 @media only screen and (min-width: 350px) and (max-width: 767px) {
+  .html {
+    scroll-snap-type: none;
+    scroll-snap-align: none;
+    overflow: auto;
+    scroll-behavior: auto;
+  }
+  .home {
+    overflow-y: auto;
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+    scroll-snap-stop: normal;
+  }
+  html,
+  body {
+    scroll-behavior: auto;
+  }
   .banner-content .title {
     margin-top: 50%;
   }
@@ -1181,7 +1220,8 @@
     height: 100vh;
   }
   .team-wrapper {
-    height: 103%;
+    height: 250%;
+    overflow-y: initial;
   }
   .container,
   .custom-container {
@@ -1240,10 +1280,10 @@
     height: 100%;
   }
   .team-area {
-    height: 255%;
+    height: 100%;
   }
   .footer-area {
-    height: 120vh;
+    height: 60%;
   }
   .footer-bottom {
     margin-top: 35%;
