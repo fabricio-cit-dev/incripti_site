@@ -1154,6 +1154,7 @@
     scroll-snap-type: none;
     scroll-behavior: auto;
     scroll-snap-stop: normal;
+    width: 100%;
   }
   html,
   body {
@@ -1190,15 +1191,14 @@
   }
   .about-area.pt-130.pb-130 {
     height: 100vh;
-    width: 100%;
   }
   .sub-title-about {
-    margin-top: -15px;
+    margin-top: -120px;
   }
   .about-img {
     width: 20vh;
     margin-left: 90px;
-    margin-top: -80px;
+    margin-top: -150px;
     height: auto;
     margin-bottom: -15px;
   }
@@ -1208,9 +1208,12 @@
   .partner-area-about {
     display: none;
   }
-  .section-title .sub-title {
-    margin-top: 60px;
+  .sub-title {
+    margin-top: -150px;
     font-size: 15px;
+  }
+  .section-title {
+    margin-top: 0;
   }
   .choose-item {
     height: 55vh;
@@ -1227,15 +1230,15 @@
   .custom-container {
     max-width: 540px;
   }
-  .partner-wrap ul li {
-    width: 50%;
-  }
   .choose-content .title {
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 15px;
   }
   .choose-content .title br {
     display: none;
+  }
+  .choose-item {
+    height: 62vh;
   }
   .texto-projetos td {
     text-align: left;
@@ -1279,8 +1282,8 @@
   .bt-roadmap-wrap {
     height: 100%;
   }
-  .team-area {
-    height: 100%;
+  .col-xl-6 {
+    margin-top: -130px;
   }
   .footer-area {
     height: 60%;
