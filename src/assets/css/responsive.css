@@ -805,7 +805,7 @@
     display: none;
   }
   .team-wrapper {
-    height: 110%;
+    min-height: 140vh;
     overflow-y: initial;
   }
   .team-area {
@@ -845,6 +845,15 @@
   }
   .contact-form-wrap {
     padding: 35px 20px;
+    flex-direction: column;
+    min-height: 140vh;
+  }
+  .step-map::before {
+    height: 60%;
+    top: 40%;
+  }
+  .step-dot {
+    height: 40px;
   }
   .footer-top .row [class*="col-"]:nth-child(2) .footer-widget {
     margin-left: 0;
@@ -1266,6 +1275,12 @@
   }
   .contact-form-wrap {
     padding: 45px 35px;
+    flex-direction: column;
+    min-height: 200vh;
+  }
+  .step-map::before {
+    top: 35%;
+    height: 60%;
   }
   .banner-content .title {
     font-size: 32px;
